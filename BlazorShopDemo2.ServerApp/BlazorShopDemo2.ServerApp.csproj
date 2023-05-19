@@ -7,12 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
     <PackageReference Include="MudBlazor" Version="6.2.5" />
     <PackageReference Include="MudBlazor.Markdown" Version="0.1.0" />
     <PackageReference Include="MudBlazor.ThemeManager" Version="1.0.8" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BlazorShopDemo2.DataAccess\BlazorShopDemo2.DataAccess.csproj" />
     <ProjectReference Include="..\BlazorShopDemo2.Models\BlazorShopDemo2.Models.csproj" />
   </ItemGroup>
 
