@@ -46,6 +46,20 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[6.2.5, )"
+            },
+            "MudBlazor.Markdown": {
+              "target": "Package",
+              "version": "[0.1.0, )"
+            },
+            "MudBlazor.ThemeManager": {
+              "target": "Package",
+              "version": "[1.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

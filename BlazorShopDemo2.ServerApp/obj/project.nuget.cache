@@ -1,8 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "/SwkruCb8S8QFgagU4Sbl6/z3X2u4XoFjSqYG1qlnuoOiAKCOBqJ2KG/FCCi66lZzuvnDf7VylurzJyx0mZjIg==",
+  "dgSpecHash": "IKECxx0cLxKVz3a2HZKEL7Uv3qiUe2R7iO3/pSsxSlAk0uYFwpTimG1PdowdXkGP7NULwLm4yoOJLvZvqE+Upg==",
   "success": true,
   "projectFilePath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\BlazorShopDemo2.ServerApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\pauli\\.nuget\\packages\\markdig\\0.30.4\\markdig.0.30.4.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.16\\microsoft.aspnetcore.authorization.6.0.16.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.16\\microsoft.aspnetcore.components.6.0.16.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.16\\microsoft.aspnetcore.components.analyzers.6.0.16.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.16\\microsoft.aspnetcore.components.forms.6.0.16.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.16\\microsoft.aspnetcore.components.web.6.0.16.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.16\\microsoft.aspnetcore.metadata.6.0.16.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.3\\microsoft.extensions.logging.abstractions.6.0.3.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\microsoft.jsinterop\\6.0.16\\microsoft.jsinterop.6.0.16.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\mudblazor\\6.2.5\\mudblazor.6.2.5.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\mudblazor.markdown\\0.1.0\\mudblazor.markdown.0.1.0.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\mudblazor.thememanager\\1.0.8\\mudblazor.thememanager.1.0.8.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
