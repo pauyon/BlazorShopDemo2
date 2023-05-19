@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BlazorShopDemo2.Business\BlazorShopDemo2.Business.csproj" />
     <ProjectReference Include="..\BlazorShopDemo2.DataAccess\BlazorShopDemo2.DataAccess.csproj" />
     <ProjectReference Include="..\BlazorShopDemo2.Models\BlazorShopDemo2.Models.csproj" />
   </ItemGroup>

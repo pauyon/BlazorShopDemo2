@@ -101,3 +101,7 @@ C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ServerApp\bin\Debug\
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ServerApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ServerApp\bin\Debug\net6.0\BlazorShopDemo2.DataAccess.dll
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ServerApp\bin\Debug\net6.0\BlazorShopDemo2.DataAccess.pdb
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ServerApp\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ServerApp\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ServerApp\bin\Debug\net6.0\BlazorShopDemo2.Business.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ServerApp\bin\Debug\net6.0\BlazorShopDemo2.Business.pdb

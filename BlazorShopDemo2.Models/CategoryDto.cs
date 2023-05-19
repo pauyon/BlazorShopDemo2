@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BlazorShopDemo2.Models
+﻿namespace BlazorShopDemo2.Models
 {
     public class CategoryDto
     {
