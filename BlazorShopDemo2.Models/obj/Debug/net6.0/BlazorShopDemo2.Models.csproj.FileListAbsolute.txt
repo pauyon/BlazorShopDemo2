@@ -1,0 +1,12 @@
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Models\bin\Debug\net6.0\BlazorShopDemo2.Models.deps.json
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Models\bin\Debug\net6.0\BlazorShopDemo2.Models.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Models\bin\Debug\net6.0\BlazorShopDemo2.Models.pdb
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Models\obj\Debug\net6.0\BlazorShopDemo2.Models.csproj.AssemblyReference.cache
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Models\obj\Debug\net6.0\BlazorShopDemo2.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Models\obj\Debug\net6.0\BlazorShopDemo2.Models.AssemblyInfoInputs.cache
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Models\obj\Debug\net6.0\BlazorShopDemo2.Models.AssemblyInfo.cs
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Models\obj\Debug\net6.0\BlazorShopDemo2.Models.csproj.CoreCompileInputs.cache
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Models\obj\Debug\net6.0\BlazorShopDemo2.Models.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Models\obj\Debug\net6.0\refint\BlazorShopDemo2.Models.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Models\obj\Debug\net6.0\BlazorShopDemo2.Models.pdb
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Models\obj\Debug\net6.0\ref\BlazorShopDemo2.Models.dll

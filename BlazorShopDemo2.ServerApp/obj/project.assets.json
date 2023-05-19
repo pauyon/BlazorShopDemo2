@@ -298,6 +298,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "BlazorShopDemo2.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BlazorShopDemo2.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlazorShopDemo2.Models.dll": {}
+        }
       }
     }
   },
@@ -967,10 +977,16 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "BlazorShopDemo2.Models/1.0.0": {
+      "type": "project",
+      "path": "../BlazorShopDemo2.Models/BlazorShopDemo2.Models.csproj",
+      "msbuildProject": "../BlazorShopDemo2.Models/BlazorShopDemo2.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BlazorShopDemo2.Models >= 1.0.0",
       "MudBlazor >= 6.2.5",
       "MudBlazor.Markdown >= 0.1.0",
       "MudBlazor.ThemeManager >= 1.0.8"
@@ -1010,7 +1026,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Models.csproj": {
+              "projectPath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

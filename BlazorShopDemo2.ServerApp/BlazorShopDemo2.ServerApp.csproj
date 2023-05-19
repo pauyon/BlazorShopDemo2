@@ -12,4 +12,8 @@
     <PackageReference Include="MudBlazor.ThemeManager" Version="1.0.8" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorShopDemo2.Models\BlazorShopDemo2.Models.csproj" />
+  </ItemGroup>
+
 </Project>

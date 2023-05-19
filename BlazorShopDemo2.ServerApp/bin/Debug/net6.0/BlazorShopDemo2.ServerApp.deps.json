@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "BlazorShopDemo2.ServerApp/1.0.0": {
         "dependencies": {
+          "BlazorShopDemo2.Models": "1.0.0",
           "MudBlazor": "6.2.5",
           "MudBlazor.Markdown": "0.1.0",
           "MudBlazor.ThemeManager": "1.0.8"
@@ -168,7 +169,12 @@
           }
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {}
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "BlazorShopDemo2.Models/1.0.0": {
+        "runtime": {
+          "BlazorShopDemo2.Models.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -302,6 +308,11 @@
       "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "BlazorShopDemo2.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
