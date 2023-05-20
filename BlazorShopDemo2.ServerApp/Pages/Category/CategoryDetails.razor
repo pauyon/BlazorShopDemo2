@@ -1,0 +1,19 @@
+﻿@page "/categories/create"
+
+<h3>CategoryDetails</h3>
+
+<MudGrid>
+    <MudItem xs="12" lg="12">
+        <MudText>@_title Category</MudText>
+    </MudItem>
+    <MudItem xs="12" lg="12">
+        <MudForm Model="@_category">
+            <MudTextField For="@(() => _category.Name)" Label="@(nameof(_category.Name))" Variant="Variant.Outlined"/>
+        </MudForm>
+    </MudItem>
+</MudGrid>
+
+@code {
+    private CategoryDto _category { get; set; } = new();
+    private string _title { get; set; } = "Create";
+}
