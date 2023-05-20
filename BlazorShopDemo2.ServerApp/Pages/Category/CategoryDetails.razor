@@ -9,6 +9,8 @@
     <MudItem xs="12" lg="12">
         <MudForm Model="@_category">
             <MudTextField For="@(() => _category.Name)" Label="@(nameof(_category.Name))" Variant="Variant.Outlined"/>
+            <MudButton Color="Color.Primary" Variant="Variant.Filled">@_title</MudButton>
+            <MudButton Href="/categories" Color="Color.Secondary" Variant="Variant.Filled">Back to Categories</MudButton>
         </MudForm>
     </MudItem>
 </MudGrid>
