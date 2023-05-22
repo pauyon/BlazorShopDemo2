@@ -1,4 +1,8 @@
 ﻿@page "/category/create"
+@page "/category/edit/{id:int}"
+
+@inject ICategoryRepository _categoryRepository
+@inject NavigationManager _navManager
 
 <h3>CategoryDetails</h3>
 
@@ -7,20 +11,70 @@
         <MudText>@_title Category</MudText>
     </MudItem>
     <MudItem xs="12" lg="12">
-        <EditForm Model="@_category" OnValidSubmit="HandleSubmit">
-            <DataAnnotationsValidator />
-            <MudTextField For="@(() => _category.Name)" @bind-Value="@_category.Name" Label="@(nameof(_category.Name))" Variant="Variant.Outlined" OnlyValidateIfDirty="true" />
-            <MudButton Color="Color.Primary" Variant="Variant.Filled" ButtonType="ButtonType.Submit">@_title</MudButton>
-            <MudButton Href="/category" Color="Color.Secondary" Variant="Variant.Filled">Back to Categories</MudButton>
-        </EditForm>
+        @if (_isLoading)
+        {
+            <div class="text-center">
+                <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+            </div>
+        }
+        else
+        {
+            <EditForm Model="@_category" OnValidSubmit="HandleSubmit">
+                <DataAnnotationsValidator />
+                <MudTextField For="@(() => _category.Name)" @bind-Value="@_category.Name" Label="@(nameof(_category.Name))" Variant="Variant.Outlined" OnlyValidateIfDirty="true" />
+                <MudButton Color="Color.Primary" Variant="Variant.Filled" ButtonType="ButtonType.Submit">@_title</MudButton>
+                <MudButton Href="/category" Color="Color.Secondary" Variant="Variant.Filled">Back to Categories</MudButton>
+            </EditForm>
+        }
     </MudItem>
 </MudGrid>
 
 @code {
+    [Parameter]
+    public int Id { get; set; }
+
     private CategoryDto _category { get; set; } = new();
-    private string _title { get; set; } = "Create";
+    private string _title { get; set; }
+    private bool _isLoading;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            if (Id == 0)
+            {
+                _title = "Create";
+                _isLoading = false;
+                StateHasChanged();
+            }
+            else
+            {
+                _title = "Update";
+                await LoadCategory();
+            }
+        }
+    }
+
+    private async Task LoadCategory()
+    {
+        _isLoading = true;
+        StateHasChanged();
+        _category = await _categoryRepository.Get(Id);
+        _isLoading = false;
+        StateHasChanged();
+    }
 
     private void HandleSubmit()
     {
+        if (_category.Id == 0)
+        {
+            _categoryRepository.Create(_category);
+        }
+        else
+        {
+            _categoryRepository.Update(_category);
+        }
+
+        _navManager.NavigateTo("category");
     }
 }

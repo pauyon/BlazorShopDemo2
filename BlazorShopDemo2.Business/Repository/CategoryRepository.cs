@@ -17,7 +17,7 @@ namespace BlazorShopDemo2.Business.Repository
             _mapper = mapper;
         }
 
-        public CategoryDto Create(CategoryDto objDto)
+        public async Task<CategoryDto> Create(CategoryDto objDto)
         {
             var obj = _mapper.Map<CategoryDto, Category>(objDto);
             obj.CreatedDate = DateTime.Now;
@@ -28,7 +28,7 @@ namespace BlazorShopDemo2.Business.Repository
             return _mapper.Map<Category, CategoryDto>(addedObj.Entity);
         }
 
-        public int Delete(int id)
+        public async Task<int> Delete(int id)
         {
             var obj = _db.Categories.FirstOrDefault(x => x.Id == id);
 
@@ -41,7 +41,7 @@ namespace BlazorShopDemo2.Business.Repository
             return 0;
         }
 
-        public CategoryDto Get(int id)
+        public async Task<CategoryDto> Get(int id)
         {
             var obj = _db.Categories.FirstOrDefault(x => x.Id == id);
 
@@ -53,12 +53,12 @@ namespace BlazorShopDemo2.Business.Repository
             return new CategoryDto();
         }
 
-        public IEnumerable<CategoryDto> GetAll()
+        public async Task<IEnumerable<CategoryDto>> GetAll()
         {
             return _mapper.Map<IEnumerable<Category>, IEnumerable<CategoryDto>>(_db.Categories);
         }
 
-        public CategoryDto Update(CategoryDto objDto)
+        public async Task<CategoryDto> Update(CategoryDto objDto)
         {
             var objFromDb = _db.Categories.FirstOrDefault(x => x.Id == objDto.Id);
 

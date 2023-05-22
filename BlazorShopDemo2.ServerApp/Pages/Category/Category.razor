@@ -1,14 +1,94 @@
 ﻿@page "/category"
 
+@inject ICategoryRepository CategoryRepository
+@inject NavigationManager NavigationManager
+@inject IDialogService DialogService
+
 <MudGrid>
-    <MudItem xs="12" lg="6" md="6">
+    <MudItem xs="12" lg="12" md="12">
         <MudText Typo="Typo.h4">Categories</MudText>
     </MudItem>
-    <MudItem xs="12" lg="4" md="4">
+    <MudItem xs="12" lg="12" md="12">
         <MudButton Href="category/create" Variant="Variant.Filled" Color="Color.Primary">Add New Category</MudButton>
+    </MudItem>
+    <MudItem xs="12" lg="12" md="12">
+        @if (_categories.Any())
+        {
+            <MudCard Elevation="5">
+                <MudCardContent>
+                    <MudDataGrid Items="@_categories" Hover="true" Breakpoint="Breakpoint.Sm" Loading="_isLoading" LoadingProgressColor="Color.Info" Striped>
+                        <Columns>
+                            <PropertyColumn Property="x => x.Name" Title="Name" Filterable="true" Sortable="true"/>
+                        <TemplateColumn>
+                            <CellTemplate>
+                                <MudStack Row>
+                                    <MudButton OnClick="@(() => NavigateToEdit(context.Item))" StartIcon="@Icons.Material.Filled.Edit" Variant="Variant.Filled" Color="Color.Primary">Edit</MudButton>
+                                    <MudButton OnClick="@(() => OpenDeleteDialog(context.Item))" StartIcon="@Icons.Material.Filled.Delete" Variant="Variant.Filled" Color="Color.Error">Delete</MudButton>
+                                </MudStack>
+                            </CellTemplate>
+                        </TemplateColumn>
+                        </Columns>
+                    </MudDataGrid>
+                </MudCardContent>
+            </MudCard>
+        }
+        else
+        {
+            if (_isLoading)
+            {
+                <div class="text-center">
+                    <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+                </div>
+            }
+        }
     </MudItem>
 </MudGrid>
 
 @code {
+    private IEnumerable<CategoryDto> _categories { get; set; } = new List<CategoryDto>();
+    private bool _isLoading;
 
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await LoadCategories();
+        }
+    }
+
+    private async Task LoadCategories()
+    {
+        _isLoading = true;
+        StateHasChanged();
+        _categories = await CategoryRepository.GetAll();
+        _isLoading = false;
+        StateHasChanged();
+    }
+
+    private void NavigateToEdit(CategoryDto category)
+    {
+        NavigationManager.NavigateTo($"category/edit/{category.Id}");
+    }
+
+    private async Task OpenDeleteDialog(CategoryDto category)
+    {
+        var parameters = new DialogParameters
+        {
+            { "ContentText", $"Do you really want to delete {category.Name}? This process cannot be undone." },
+            { "ButtonText", "Yes" },
+            { "Color", Color.Error },
+        };
+
+        var options = new DialogOptions() { CloseButton = true, MaxWidth = MaxWidth.Medium };
+
+        var dialog = await DialogService.ShowAsync<DeleteConfirmation>("Delete", parameters, options);
+
+        var result = await dialog.Result;
+
+        if (!result.Canceled)
+        {
+            await CategoryRepository.Delete(category.Id);
+            await LoadCategories();
+        }
+    }
 }

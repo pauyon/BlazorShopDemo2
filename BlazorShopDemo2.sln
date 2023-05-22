@@ -7,13 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorShopDemo2.ServerApp",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorShopDemo2.ClientApp", "BlazorShopDemo2.ClientApp\BlazorShopDemo2.ClientApp.csproj", "{DD5A7503-BF98-4BDB-8E8E-5E401EA14505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorShopDemo2.Models", "BlazorShopDemo2.Models\BlazorShopDemo2.Models.csproj", "{2E70D312-7821-4378-8E61-1E018E35A616}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorShopDemo2.Models", "BlazorShopDemo2.Models\BlazorShopDemo2.Models.csproj", "{2E70D312-7821-4378-8E61-1E018E35A616}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorShopDemo2.Common", "BlazorShopDemo2.Common\BlazorShopDemo2.Common.csproj", "{4EA744E9-21D0-444B-BC79-A620E8E7E0E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorShopDemo2.Common", "BlazorShopDemo2.Common\BlazorShopDemo2.Common.csproj", "{4EA744E9-21D0-444B-BC79-A620E8E7E0E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorShopDemo2.Business", "BlazorShopDemo2.Business\BlazorShopDemo2.Business.csproj", "{5EC5E236-8A92-4971-A2E2-29D5C0229353}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorShopDemo2.Business", "BlazorShopDemo2.Business\BlazorShopDemo2.Business.csproj", "{5EC5E236-8A92-4971-A2E2-29D5C0229353}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorShopDemo2.DataAccess", "BlazorShopDemo2.DataAccess\BlazorShopDemo2.DataAccess.csproj", "{B7D3A4CA-9D2C-4F82-ACB6-3C98A642AAA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorShopDemo2.DataAccess", "BlazorShopDemo2.DataAccess\BlazorShopDemo2.DataAccess.csproj", "{B7D3A4CA-9D2C-4F82-ACB6-3C98A642AAA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
