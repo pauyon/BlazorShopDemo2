@@ -24,4 +24,8 @@
     <ProjectReference Include="..\BlazorShopDemo2.Models\BlazorShopDemo2.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\product\" />
+  </ItemGroup>
+
 </Project>

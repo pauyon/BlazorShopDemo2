@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+jv+9xlEncNnvUxtdYN7IPqrTUexbD7HAA+Jaa9kboE=",
+  "Hash": "y9llp8DwUvzLwxCC408thC48g9AQXq1xBE4TTqmEnaQ=",
   "Source": "BlazorShopDemo2.ServerApp",
   "BasePath": "_content/BlazorShopDemo2.ServerApp",
   "Mode": "Default",
@@ -4911,6 +4911,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\fc52541c-315e-4cb4-bd4f-6a150945d539.jpg",
+      "SourceId": "BlazorShopDemo2.ServerApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\",
+      "BasePath": "_content/BlazorShopDemo2.ServerApp",
+      "RelativePath": "images/product/fc52541c-315e-4cb4-bd4f-6a150945d539.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\fc52541c-315e-4cb4-bd4f-6a150945d539.jpg"
     }
   ]
 }

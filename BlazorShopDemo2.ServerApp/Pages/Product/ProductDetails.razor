@@ -1,0 +1,148 @@
+﻿@page "/product/create"
+@page "/product/edit/{id:int}"
+
+@inject IProductRepository ProductRepository
+@inject ICategoryRepository CategoryRepository
+@inject NavigationManager NavigationManager
+@inject IFileUploadService _fileUploadService
+@inject ISnackbar SnackbarService
+
+<h3>Product Details</h3>
+
+<MudGrid>
+    <MudItem xs="12" lg="12">
+        <MudText>@_title Product</MudText>
+    </MudItem>
+    <MudItem xs="12" lg="12">
+        @if (_isLoading)
+        {
+            <div class="text-center">
+                <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+            </div>
+        }
+        else
+        {
+            <EditForm Model="@_product" OnValidSubmit="HandleSubmit">
+                <DataAnnotationsValidator />
+                <MudTextField @bind-Text="_product.Name" For="@(() => _product.Name)" Label="@(nameof(_product.Name))" Variant="Variant.Outlined" />
+                <MudTextField @bind-Text="_product.Color" For="@(() => _product.Color)" Label="@(nameof(_product.Color))" Variant="Variant.Outlined" />
+                <MudTextField @bind-Text="_product.Description" For="@(() => _product.Description)" Label="@(nameof(_product.Description))" Variant="Variant.Outlined" Lines="5" />
+                <MudAutocomplete T="CategoryDto"
+                             Label="@(nameof(_product.Category))"
+                             Value="@_product.Category"
+                             SearchFunc="@SearchCategory"
+                             ToStringFunc="@(e => e != null ? e.Name : null )"
+                             Variant="Variant.Outlined"
+                             Required="true"
+                             RequiredError="Category is required"
+                             ValueChanged="@(x => OnCategoryChanged(x))"/>
+                <MudCheckBox @bind-Checked="_product.ShopFavorites" For="@(() => _product.ShopFavorites)" Label="@(nameof(_product.ShopFavorites))" />
+                <MudCheckBox @bind-Checked="_product.CustomerFavorites" For="@(() => _product.CustomerFavorites)" Label="@(nameof(_product.CustomerFavorites))" />
+
+                <MudFileUpload T="IReadOnlyList<IBrowserFile>" FilesChanged="UploadFiles" Context="imageUpload">
+                    <ButtonTemplate>
+                        <MudButton HtmlTag="label"
+                                   Variant="Variant.Filled"
+                                   Color="Color.Primary"
+                                   StartIcon="@Icons.Material.Filled.CloudUpload"
+                                   for="@imageUpload">
+                            Multiple Files
+                        </MudButton>
+                    </ButtonTemplate>
+                </MudFileUpload>
+
+                <MudButton Color="Color.Primary" Variant="Variant.Filled" ButtonType="ButtonType.Submit">@_title</MudButton>
+                <MudButton Href="/Product" Color="Color.Secondary" Variant="Variant.Filled">Back to Products</MudButton>
+            </EditForm>
+        }
+    </MudItem>
+</MudGrid>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private ProductDto _product { get; set; } = new();
+    private IEnumerable<CategoryDto> _categories { get; set; } = new List<CategoryDto>();
+    private string _title { get; set; } = "Create";
+    private bool _isLoading;
+    IList<IBrowserFile> files = new List<IBrowserFile>();
+
+
+    private async Task UploadFiles(IReadOnlyList<IBrowserFile> files)
+    {
+        foreach(var file in files)
+        {
+            var fileInfo = new FileInfo(file.Name);
+
+            if (fileInfo.Extension.ToLower() == ".jpg" ||
+                fileInfo.Extension.ToLower() == ".png" || 
+                fileInfo.Extension.ToLower() == ".jpeg")
+            {
+                _product.ImageUrl = await _fileUploadService.UploadFile(file);
+            }
+            else
+            {
+                SnackbarService.Add("Please only select image files", Severity.Error);
+                return;
+            }
+        }
+
+        _isLoading = false;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await LoadProduct();
+        }
+    }
+
+    private async Task LoadProduct()
+    {
+        _isLoading = true;
+        StateHasChanged();
+        _categories = await CategoryRepository.GetAll();
+
+        if (Id != 0)
+        {
+            _title = "Update";
+            _product = await ProductRepository.Get(Id);
+        }
+
+        _isLoading = false;
+        StateHasChanged();
+    }
+
+    private void HandleSubmit()
+    {
+        if (_product.Id == 0)
+        {
+            ProductRepository.Create(_product);
+        }
+        else
+        {
+            ProductRepository.Update(_product);
+        }
+
+        NavigationManager.NavigateTo("product");
+    }
+
+    private Task<IEnumerable<CategoryDto>> SearchCategory(string value)
+    {
+        if (string.IsNullOrEmpty(value))
+        {
+            return Task.FromResult(_categories.AsEnumerable());
+        }
+        else
+        {
+            return Task.FromResult(_categories.Where(x => x.Name.Contains(value, StringComparison.InvariantCultureIgnoreCase)));
+        }
+    }
+
+    private void OnCategoryChanged(CategoryDto category)
+    {
+        _product.CategoryId = category.Id;
+    }
+}

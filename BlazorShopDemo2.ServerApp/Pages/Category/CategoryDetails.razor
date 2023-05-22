@@ -1,10 +1,10 @@
 ﻿@page "/category/create"
 @page "/category/edit/{id:int}"
 
-@inject ICategoryRepository _categoryRepository
-@inject NavigationManager _navManager
+@inject ICategoryRepository CategoryRepository
+@inject NavigationManager NavigationManager
 
-<h3>CategoryDetails</h3>
+<h3>Category Details</h3>
 
 <MudGrid>
     <MudItem xs="12" lg="12">
@@ -34,7 +34,7 @@
     public int Id { get; set; }
 
     private CategoryDto _category { get; set; } = new();
-    private string _title { get; set; }
+    private string _title { get; set; } = "Create";
     private bool _isLoading;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -43,9 +43,7 @@
         {
             if (Id == 0)
             {
-                _title = "Create";
                 _isLoading = false;
-                StateHasChanged();
             }
             else
             {
@@ -59,7 +57,7 @@
     {
         _isLoading = true;
         StateHasChanged();
-        _category = await _categoryRepository.Get(Id);
+        _category = await CategoryRepository.Get(Id);
         _isLoading = false;
         StateHasChanged();
     }
@@ -68,13 +66,13 @@
     {
         if (_category.Id == 0)
         {
-            _categoryRepository.Create(_category);
+            CategoryRepository.Create(_category);
         }
         else
         {
-            _categoryRepository.Update(_category);
+            CategoryRepository.Update(_category);
         }
 
-        _navManager.NavigateTo("category");
+        NavigationManager.NavigateTo("category");
     }
 }
