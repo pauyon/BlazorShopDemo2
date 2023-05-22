@@ -41,7 +41,7 @@ namespace BlazorShopDemo2.ServerApp.Services
             await using FileStream fs = new(filePath, FileMode.Create);
             await file.OpenReadStream().CopyToAsync(fs);
 
-            return filePath;
+            return Path.Combine("\\images\\product\\", fileName);
         }
     }
 }
