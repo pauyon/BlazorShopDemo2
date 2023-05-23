@@ -1,0 +1,17 @@
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\obj\Debug\net7.0\BlazorShopDemo2.Business.csproj.AssemblyReference.cache
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\obj\Debug\net7.0\BlazorShopDemo2.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\obj\Debug\net7.0\BlazorShopDemo2.Business.AssemblyInfoInputs.cache
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\obj\Debug\net7.0\BlazorShopDemo2.Business.AssemblyInfo.cs
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\obj\Debug\net7.0\BlazorShopDemo2.Business.csproj.CoreCompileInputs.cache
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\bin\Debug\net7.0\BlazorShopDemo2.Business.deps.json
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\bin\Debug\net7.0\BlazorShopDemo2.Business.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\bin\Debug\net7.0\BlazorShopDemo2.Business.pdb
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\bin\Debug\net7.0\BlazorShopDemo2.DataAccess.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\bin\Debug\net7.0\BlazorShopDemo2.Domain.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\bin\Debug\net7.0\BlazorShopDemo2.DataAccess.pdb
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\bin\Debug\net7.0\BlazorShopDemo2.Domain.pdb
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\obj\Debug\net7.0\BlazorShopDemo2.Business.csproj.CopyComplete
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\obj\Debug\net7.0\BlazorShopDemo2.Business.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\obj\Debug\net7.0\refint\BlazorShopDemo2.Business.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\obj\Debug\net7.0\BlazorShopDemo2.Business.pdb
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.Business\obj\Debug\net7.0\ref\BlazorShopDemo2.Business.dll
