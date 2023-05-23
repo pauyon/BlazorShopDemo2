@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0jnd9fZvLADxX3mCKQdrWYo3IKNB7Ny9WWXpR5AuUKkHp6yVhCTQEgjtnYZPulJwG+RJgB7wDqTUx4+xUmoEyw==",
+  "dgSpecHash": "0TuTgdHjLji7JbmBZXtGCz/95lzPhDhQVbTqVNvVcIiInYl+CUWOU7mKxrUoGlKwQMggfQEGAWatuHS+cYpoDA==",
   "success": true,
   "projectFilePath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\BlazorShopDemo2.ClientApp.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,7 @@
     "C:\\Users\\pauli\\.nuget\\packages\\mudblazor\\6.2.5\\mudblazor.6.2.5.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\mudblazor.markdown\\0.1.0\\mudblazor.markdown.0.1.0.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\mudblazor.thememanager\\1.0.8\\mudblazor.thememanager.1.0.8.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",

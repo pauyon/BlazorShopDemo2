@@ -12,6 +12,11 @@
     <PackageReference Include="MudBlazor" Version="6.2.5" />
     <PackageReference Include="MudBlazor.Markdown" Version="0.1.0" />
     <PackageReference Include="MudBlazor.ThemeManager" Version="1.0.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorShopDemo2.Models\BlazorShopDemo2.Models.csproj" />
   </ItemGroup>
 
 </Project>

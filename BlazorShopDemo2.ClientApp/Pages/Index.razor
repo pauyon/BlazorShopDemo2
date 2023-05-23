@@ -1,9 +1,40 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
+@inject IProductService ProductService
 
-<h1>Hello, world!</h1>
+<MudGrid>
+    @if (_isLoading)
+    {
+        <MudProgressCircular Color="Color.Primary"/>
+    }
+    else
+    {
+        @foreach (var product in _products)
+        {
+            <MudItem xs="12" lg="2" md="4">
+                <MudCard Elevation="5" Class="text-center">
+                    <MudCardMedia Image="@product.ImageUrl" Height="250" />
+                    <MudCardContent>
+                        <MudText Typo="Typo.h6">@product.Name</MudText>
+                        <MudText Typo="Typo.body2">@product.Description</MudText>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" Href="@($"/product/{@product.Id}")">View</MudButton>
+                    </MudCardActions>
+                </MudCard>
+            </MudItem>
+        }
+    }
+</MudGrid>
 
-Welcome to your new app.
+@code {
+    private bool _isLoading = true;
+    public IEnumerable<ProductDto> _products;
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+    protected override async Task OnInitializedAsync()
+    {
+        _isLoading = true;
+        _products = await ProductService.GetAll();
+        _isLoading = false;
+    }
+}
