@@ -9,31 +9,35 @@
         <MudText Typo="Typo.h3">Products</MudText>
     </MudItem>
     <MudItem xs="12" lg="12" md="12">
-        <MudButton Href="product/create" Variant="Variant.Filled" Color="Color.Primary">Add New product</MudButton>
-    </MudItem>
-    <MudItem xs="12" lg="12" md="12">
         @if (_products.Any())
         {
             <MudCard Elevation="5">
                 <MudCardContent>
-                    <MudDataGrid Items="@_products" Hover="true" Breakpoint="Breakpoint.Sm" Loading="_isLoading" LoadingProgressColor="Color.Info" Striped>
-                    <Columns>
-                        <PropertyColumn Property="x => x.Name" Title="Name" Filterable="true" Sortable="true" />
-                        <PropertyColumn Property="x => x.ShopFavorites" Title="Shop Favorites" Filterable="true" Sortable="true" />
-                        <PropertyColumn Property="x => x.CustomerFavorites" Title="Customer Favorites" Filterable="true" Sortable="true" />
-                        <PropertyColumn Property="x => x.Category.Name" Title="Category" Filterable="true" Sortable="true" />
-                        <TemplateColumn>
-                            <CellTemplate>
-                                <MudStack Row>
-                                    <MudButton OnClick="@(() => NavigateToEdit(context.Item))" StartIcon="@Icons.Material.Filled.Edit" Variant="Variant.Filled" Color="Color.Primary">Edit</MudButton>
-                                    <MudButton OnClick="@(() => OpenDeleteDialog(context.Item))" StartIcon="@Icons.Material.Filled.Delete" Variant="Variant.Filled" Color="Color.Error">Delete</MudButton>
-                                </MudStack>
-                            </CellTemplate>
-                        </TemplateColumn>
-                    </Columns>
-                </MudDataGrid>
-            </MudCardContent>
-        </MudCard>
+                    <MudGrid>
+                        <MudItem xs="12" lg="12" md="12">
+                            <MudButton Href="product/create" Variant="Variant.Filled" Color="Color.Primary">Add New product</MudButton>
+                        </MudItem>
+                        <MudItem xs="12" lg="12" md="12">
+                            <MudDataGrid Items="@_products" Hover="true" Breakpoint="Breakpoint.Sm" Loading="_isLoading" LoadingProgressColor="Color.Info" Striped>
+                                <Columns>
+                                    <PropertyColumn Property="x => x.Name" Title="Name" Filterable="true" Sortable="true" />
+                                    <PropertyColumn Property="x => x.ShopFavorites" Title="Shop Favorites" Filterable="true" Sortable="true" />
+                                    <PropertyColumn Property="x => x.CustomerFavorites" Title="Customer Favorites" Filterable="true" Sortable="true" />
+                                    <PropertyColumn Property="x => x.Category.Name" Title="Category" Filterable="true" Sortable="true" />
+                                    <TemplateColumn>
+                                        <CellTemplate>
+                                            <MudStack Row>
+                                                <MudButton OnClick="@(() => NavigateToEdit(context.Item))" StartIcon="@Icons.Material.Filled.Edit" Variant="Variant.Filled" Color="Color.Primary">Edit</MudButton>
+                                                <MudButton OnClick="@(() => OpenDeleteDialog(context.Item))" StartIcon="@Icons.Material.Filled.Delete" Variant="Variant.Filled" Color="Color.Error">Delete</MudButton>
+                                            </MudStack>
+                                        </CellTemplate>
+                                    </TemplateColumn>
+                                </Columns>
+                            </MudDataGrid>
+                        </MudItem>
+                    </MudGrid>
+                </MudCardContent>
+            </MudCard>
         }
         else
         {
