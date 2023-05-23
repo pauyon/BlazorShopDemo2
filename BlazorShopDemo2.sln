@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorShopDemo2.Business", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorShopDemo2.DataAccess", "BlazorShopDemo2.DataAccess\BlazorShopDemo2.DataAccess.csproj", "{B7D3A4CA-9D2C-4F82-ACB6-3C98A642AAA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorShopDemo2.Api", "BlazorShop2.Api\BlazorShopDemo2.Api.csproj", "{3DD68C7C-48DC-43C2-9823-13262DFA0E8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorShopDemo2.Api", "BlazorShop2.Api\BlazorShopDemo2.Api.csproj", "{3DD68C7C-48DC-43C2-9823-13262DFA0E8D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{D287CAAF-FA7C-4314-BA11-16D935C6C5DD}"
 EndProject

@@ -1,0 +1,43 @@
+﻿@page "/details/{ProductId:int}"
+@inject IProductService ProductService
+
+
+<MudGrid>
+    <MudItem xs="12" lg="12" md="12">
+        <MudText Typo="Typo.h3">Product Details</MudText>
+    </MudItem>
+    <MudItem xs="12" lg="6" md="6">
+        <MudCard Elevation="5">
+            <MudCardContent>
+                <MudGrid>
+                    <MudItem xs="12" lg="2" md="2">
+                        <MudImage Src="@_product.ImageUrl" Height="250"/>
+                    </MudItem>
+                    <MudItem xs="12" lg="4" md="4">
+                        <MudText Typo="Typo.h4">@_product.Name</MudText>
+                        <MudSpacer />
+                        <MudText Typo="Typo.body2">@_product.Description</MudText>
+                    </MudItem>
+                    <MudItem xs="12" lg="4" md="4">
+
+                    </MudItem>
+                </MudGrid>
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+</MudGrid>
+
+@code {
+    [Parameter]
+    public int ProductId { get; set; }
+
+    private ProductDto _product { get; set; } = new();
+    private bool _isLoading { get; set; } = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _isLoading = true;
+        _product = await ProductService.Get(ProductId);
+        _isLoading = false;
+    }
+}
