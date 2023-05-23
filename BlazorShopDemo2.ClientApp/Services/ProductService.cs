@@ -1,5 +1,5 @@
 ﻿using BlazorShopDemo2.ClientApp.Services.IService;
-using BlazorShopDemo2.Models;
+using BlazorShopDemo2.Domain.Models;
 using Newtonsoft.Json;
 
 namespace BlazorShopDemo2.ClientApp.Services

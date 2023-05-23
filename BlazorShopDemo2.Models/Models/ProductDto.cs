@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BlazorShopDemo2.Models
+namespace BlazorShopDemo2.Domain.Models
 {
     public class ProductDto
     {

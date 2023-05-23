@@ -16,4 +16,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorShopDemo2.Models\BlazorShopDemo2.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

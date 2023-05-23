@@ -1155,6 +1155,16 @@
             "rid": "win"
           }
         }
+      },
+      "BlazorShopDemo2.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BlazorShopDemo2.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlazorShopDemo2.Domain.dll": {}
+        }
       }
     }
   },
@@ -3500,10 +3510,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "BlazorShopDemo2.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BlazorShopDemo2.Models/BlazorShopDemo2.Domain.csproj",
+      "msbuildProject": "../BlazorShopDemo2.Models/BlazorShopDemo2.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BlazorShopDemo2.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
@@ -3544,7 +3560,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Domain.csproj": {
+              "projectPath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

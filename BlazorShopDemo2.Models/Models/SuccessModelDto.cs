@@ -1,4 +1,4 @@
-﻿namespace BlazorShopDemo2.Models
+﻿namespace BlazorShopDemo2.Domain.Models
 {
     public class SuccessModelDto
     {

@@ -1,5 +1,5 @@
 ﻿using BlazorShopDemo2.Business.Repository.IRepository;
-using BlazorShopDemo2.Models;
+using BlazorShopDemo2.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlazorShopDemo2.Api.Controllers

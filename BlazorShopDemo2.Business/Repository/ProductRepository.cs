@@ -1,21 +1,20 @@
 ﻿using AutoMapper;
 using BlazorShopDemo2.Business.Repository.IRepository;
 using BlazorShopDemo2.DataAccess.Data;
-using BlazorShopDemo2.DataAccess;
-using BlazorShopDemo2.Models;
-using System.Security.Cryptography.X509Certificates;
+using BlazorShopDemo2.Domain.Entities;
+using BlazorShopDemo2.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace BlazorShopDemo2.Business.Repository
 {
     public class ProductRepository : IProductRepository
     {
-        private readonly ApplicationDbContext _db;
+        private readonly ApplicationDbContext _context;
         private readonly IMapper _mapper;
 
-        public ProductRepository(ApplicationDbContext db, IMapper mapper)
+        public ProductRepository(ApplicationDbContext context, IMapper mapper)
         {
-            _db = db;
+            _context = context;
             _mapper = mapper;
         }
 
@@ -23,11 +22,10 @@ namespace BlazorShopDemo2.Business.Repository
         {
             var obj = _mapper.Map<ProductDto, Product>(objDto);
 
-            var addedObj = _db.Products.Add(obj);
+            var addedObj = _context.Products.Add(obj);
             try
             {
-                _db.SaveChanges();
-
+                _context.SaveChanges();
             }
             catch (Exception ex)
             {
@@ -39,12 +37,12 @@ namespace BlazorShopDemo2.Business.Repository
 
         public async Task<int> Delete(int id)
         {
-            var obj = _db.Products.FirstOrDefault(x => x.Id == id);
+            var obj = _context.Products.FirstOrDefault(x => x.Id == id);
 
             if (obj != null)
             {
-                _db.Products.Remove(obj);
-                return _db.SaveChanges();
+                _context.Products.Remove(obj);
+                return _context.SaveChanges();
             }
 
             return 0;
@@ -52,7 +50,7 @@ namespace BlazorShopDemo2.Business.Repository
 
         public async Task<ProductDto> Get(int id)
         {
-            var obj = _db.Products.Include(x => x.Category).FirstOrDefault(x => x.Id == id);
+            var obj = _context.Products.Include(x => x.Category).FirstOrDefault(x => x.Id == id);
 
             if (obj != null)
             {
@@ -64,12 +62,12 @@ namespace BlazorShopDemo2.Business.Repository
 
         public async Task<IEnumerable<ProductDto>> GetAll()
         {
-            return _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDto>>(_db.Products.Include(x => x.Category));
+            return _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDto>>(_context.Products.Include(x => x.Category));
         }
 
         public async Task<ProductDto> Update(ProductDto objDto)
         {
-            var objFromDb = _db.Products.FirstOrDefault(x => x.Id == objDto.Id);
+            var objFromDb = _context.Products.FirstOrDefault(x => x.Id == objDto.Id);
 
             if (objFromDb != null)
             {
@@ -81,8 +79,8 @@ namespace BlazorShopDemo2.Business.Repository
                 objFromDb.ShopFavorites = objDto.ShopFavorites;
                 objFromDb.CustomerFavorites = objDto.CustomerFavorites;
 
-                _db.Products.Update(objFromDb);
-                _db.SaveChanges();
+                _context.Products.Update(objFromDb);
+                _context.SaveChanges();
 
                 return _mapper.Map<Product, ProductDto>(objFromDb);
             }

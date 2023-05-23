@@ -1,4 +1,4 @@
-﻿namespace BlazorShopDemo2.DataAccess
+﻿namespace BlazorShopDemo2.Domain.Entities
 {
     public class Category
     {

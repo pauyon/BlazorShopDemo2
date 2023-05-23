@@ -1067,6 +1067,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "BlazorShopDemo2.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
@@ -1078,14 +1079,14 @@
           "bin/placeholder/BlazorShopDemo2.DataAccess.dll": {}
         }
       },
-      "BlazorShopDemo2.Models/1.0.0": {
+      "BlazorShopDemo2.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/BlazorShopDemo2.Models.dll": {}
+          "bin/placeholder/BlazorShopDemo2.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BlazorShopDemo2.Models.dll": {}
+          "bin/placeholder/BlazorShopDemo2.Domain.dll": {}
         }
       }
     }
@@ -3278,17 +3279,17 @@
       "path": "../BlazorShopDemo2.DataAccess/BlazorShopDemo2.DataAccess.csproj",
       "msbuildProject": "../BlazorShopDemo2.DataAccess/BlazorShopDemo2.DataAccess.csproj"
     },
-    "BlazorShopDemo2.Models/1.0.0": {
+    "BlazorShopDemo2.Domain/1.0.0": {
       "type": "project",
-      "path": "../BlazorShopDemo2.Models/BlazorShopDemo2.Models.csproj",
-      "msbuildProject": "../BlazorShopDemo2.Models/BlazorShopDemo2.Models.csproj"
+      "path": "../BlazorShopDemo2.Models/BlazorShopDemo2.Domain.csproj",
+      "msbuildProject": "../BlazorShopDemo2.Models/BlazorShopDemo2.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 12.0.1",
       "BlazorShopDemo2.DataAccess >= 1.0.0",
-      "BlazorShopDemo2.Models >= 1.0.0"
+      "BlazorShopDemo2.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3329,8 +3330,8 @@
             "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.DataAccess\\BlazorShopDemo2.DataAccess.csproj": {
               "projectPath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.DataAccess\\BlazorShopDemo2.DataAccess.csproj"
             },
-            "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Models.csproj": {
-              "projectPath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Models.csproj"
+            "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Domain.csproj": {
+              "projectPath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Domain.csproj"
             }
           }
         }

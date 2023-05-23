@@ -1,4 +1,4 @@
-﻿using BlazorShopDemo2.Models;
+﻿using BlazorShopDemo2.Domain.Models;
 
 namespace BlazorShopDemo2.Business.Repository.IRepository
 {

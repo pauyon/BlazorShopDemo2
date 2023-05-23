@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BlazorShopDemo2.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlazorShopDemo2.DataAccess.Data
 {

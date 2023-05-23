@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "klzM2hBsOetQWdagUE/FVYuIKEbDaE8ykAEtHHEQCMlvPOC2PzL8MJtOF55TxXG2IGPHPat2yceikt1tr1ATdA==",
+  "dgSpecHash": "4ZqMP/bkt9UPQRRHsEOEpHhvapBG4aSNkJwZW/q8QFYhqE/ygG/lj3eHolkkO0oNAfjegzlZDYTdzTuyDGkEOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Models.csproj",
+  "projectFilePath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

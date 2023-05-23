@@ -2,6 +2,8 @@ C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\blazor.webassembly.js
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\BlazorShopDemo2.ClientApp.dll
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\BlazorShopDemo2.ClientApp.pdb
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\BlazorShopDemo2.Domain.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\BlazorShopDemo2.Domain.pdb
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\dotnet.6.0.16.exu8i8b2tw.js
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\dotnet.timezones.blat
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\dotnet.wasm
@@ -42,6 +44,7 @@ C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\MudBlazor.Markdown.dll
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\MudBlazor.ThemeManager.dll
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\netstandard.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.AppContext.dll
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.Buffers.dll
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.Collections.Concurrent.dll
@@ -214,6 +217,7 @@ C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.IO.Compression.Brotli.dll.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.InteropServices.dll.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Abstractions.dll.gz
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\BlazorShopDemo2.Domain.pdb.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.Collections.NonGeneric.dll.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.Collections.Specialized.dll.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\Microsoft.CSharp.dll.gz
@@ -284,6 +288,7 @@ C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.FileVersionInfo.dll.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Serialization.Formatters.dll.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Handles.dll.gz
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\BlazorShopDemo2.Domain.dll.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.ServiceModel.Web.dll.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Physical.dll.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.Metadata.dll.gz
@@ -375,6 +380,7 @@ C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\MudBlazor.dll.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.Threading.Tasks.Parallel.dll.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.Threading.Overlapped.dll.gz
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.DispatchProxy.dll.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\System.Text.Encoding.dll.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz
@@ -434,6 +440,7 @@ C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\MudBlazor.dll
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\MudBlazor.Markdown.dll
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\MudBlazor.ThemeManager.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\System.IO.Pipelines.dll
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\Microsoft.CSharp.dll
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\Microsoft.VisualBasic.Core.dll
@@ -608,6 +615,8 @@ C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\icudt_CJK.dat
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\icudt_EFIGS.dat
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\icudt_no_CJK.dat
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\BlazorShopDemo2.Domain.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\BlazorShopDemo2.Domain.pdb
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\BlazorShopDemo2.ClientApp.csproj.AssemblyReference.cache
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\BlazorShopDemo2.ClientApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\BlazorShopDemo2.ClientApp.AssemblyInfoInputs.cache
@@ -640,6 +649,7 @@ C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\vgZ6FHNo.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\gKPZoxl4.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\GC02MBgM.gz
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\VOQoczzP.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\EhRUzWqw.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\2U+o2L5O.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\Yov66qHB.gz
@@ -814,6 +824,8 @@ C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\jxUNewIG.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\O2yD3fPe.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\j4lqBB4e.gz
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\HDpAa2PV.gz
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\25Bh08dj.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\PCIYxpH6.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\yQ6vAo8x.gz
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\cH+B1jsA.gz
@@ -834,15 +846,3 @@ C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\refint\BlazorShopDemo2.ClientApp.dll
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\BlazorShopDemo2.ClientApp.pdb
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\ref\BlazorShopDemo2.ClientApp.dll
-C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\BlazorShopDemo2.Models.dll
-C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\BlazorShopDemo2.Models.pdb
-C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll
-C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\BlazorShopDemo2.Models.pdb.gz
-C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
-C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\wwwroot\_framework\BlazorShopDemo2.Models.dll.gz
-C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\BlazorShopDemo2.Models.dll
-C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\bin\Debug\net6.0\BlazorShopDemo2.Models.pdb
-C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\VOQoczzP.gz
-C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\W7BOYcVb.gz
-C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ClientApp\obj\Debug\net6.0\build-gz\kIJppdrr.gz

@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics.CodeAnalysis;
 
-namespace BlazorShopDemo2.DataAccess
+namespace BlazorShopDemo2.Domain.Entities
 {
     public class Product
     {

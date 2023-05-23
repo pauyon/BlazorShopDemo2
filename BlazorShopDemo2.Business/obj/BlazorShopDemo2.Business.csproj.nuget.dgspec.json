@@ -38,8 +38,8 @@
               "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.DataAccess\\BlazorShopDemo2.DataAccess.csproj": {
                 "projectPath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.DataAccess\\BlazorShopDemo2.DataAccess.csproj"
               },
-              "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Models.csproj": {
-                "projectPath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Models.csproj"
+              "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Domain.csproj": {
+                "projectPath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Domain.csproj"
               }
             }
           }
@@ -109,7 +109,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Domain.csproj": {
+                "projectPath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -161,12 +165,12 @@
         }
       }
     },
-    "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Models.csproj": {
+    "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Models.csproj",
-        "projectName": "BlazorShopDemo2.Models",
-        "projectPath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Models.csproj",
+        "projectUniqueName": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Domain.csproj",
+        "projectName": "BlazorShopDemo2.Domain",
+        "projectPath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\BlazorShopDemo2.Domain.csproj",
         "packagesPath": "C:\\Users\\pauli\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Models\\obj\\",
         "projectStyle": "PackageReference",
