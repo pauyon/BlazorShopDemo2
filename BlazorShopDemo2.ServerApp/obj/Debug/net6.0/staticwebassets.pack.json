@@ -57,8 +57,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\264f2be0-6890-4faf-85cf-e787641444b9.jpg",
-      "PackagePath": "staticwebassets\\images\\product\\264f2be0-6890-4faf-85cf-e787641444b9.jpg"
+      "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\1d3ef457-8e32-470d-b944-8eb82622598f.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\1d3ef457-8e32-470d-b944-8eb82622598f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\44a89b1e-492b-43bf-8290-92abc2e6f39b.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\44a89b1e-492b-43bf-8290-92abc2e6f39b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\5c4a9a57-cd70-431e-88cc-1927d937f34f.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\5c4a9a57-cd70-431e-88cc-1927d937f34f.jpg"
     },
     {
       "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\62dc1c06-61fa-43ed-9aec-d9e2e0bfd8dd.jpg",
@@ -71,6 +79,22 @@
     {
       "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\c3a9fea4-ec77-453f-96ba-f9c3ceebc478.jpg",
       "PackagePath": "staticwebassets\\images\\product\\c3a9fea4-ec77-453f-96ba-f9c3ceebc478.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\d115998f-345c-47bd-8a27-3c959aa69a41.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\d115998f-345c-47bd-8a27-3c959aa69a41.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\default.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\default.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\e0223830-ddd4-4ff6-9250-0e3ad2b80e11.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\e0223830-ddd4-4ff6-9250-0e3ad2b80e11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\f6c29b7e-abbe-4e50-bdbb-03d4b41c1b9f.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\f6c29b7e-abbe-4e50-bdbb-03d4b41c1b9f.jpg"
     },
     {
       "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\fc52541c-315e-4cb4-bd4f-6a150945d539.jpg",

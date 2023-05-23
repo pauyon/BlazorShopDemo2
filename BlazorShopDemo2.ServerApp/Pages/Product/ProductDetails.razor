@@ -7,22 +7,22 @@
 @inject IFileUploadService _fileUploadService
 @inject ISnackbar SnackbarService
 
-<h3>Product Details</h3>
+<MudText Typo="Typo.h3">Product Details</MudText>
 
-<MudGrid>
-    <MudItem xs="12" lg="12">
-        <MudText>@_title Product</MudText>
-    </MudItem>
-    <MudItem xs="12" lg="12">
-        @if (_isLoading)
-        {
-            <div class="text-center">
-                <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
-            </div>
-        }
-        else
-        {
-            <EditForm Model="@_product" OnValidSubmit="HandleSubmit">
+@if (_isLoading)
+{
+    <div class="text-center">
+        <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+    </div>
+}
+else
+{
+    <EditForm Model="@_product" OnValidSubmit="HandleSubmit">
+        <MudGrid>
+            <MudItem xs="12" lg="12">
+                <MudText Typo="Typo.h4">@_title Product</MudText>
+            </MudItem>
+            <MudItem xs="12" lg="6" md="6">
                 <DataAnnotationsValidator />
                 <MudTextField @bind-Text="_product.Name" For="@(() => _product.Name)" Label="@(nameof(_product.Name))" Variant="Variant.Outlined" />
                 <MudTextField @bind-Text="_product.Color" For="@(() => _product.Color)" Label="@(nameof(_product.Color))" Variant="Variant.Outlined" />
@@ -35,43 +35,49 @@
                              Variant="Variant.Outlined"
                              Required="true"
                              RequiredError="Category is required"
-                             ValueChanged="@(x => OnCategoryChanged(x))"/>
+                             ValueChanged="@(x => OnCategoryChanged(x))" />
                 <MudCheckBox @bind-Checked="_product.ShopFavorites" For="@(() => _product.ShopFavorites)" Label="@(nameof(_product.ShopFavorites))" />
                 <MudCheckBox @bind-Checked="_product.CustomerFavorites" For="@(() => _product.CustomerFavorites)" Label="@(nameof(_product.CustomerFavorites))" />
-
-                <MudFileUpload T="IReadOnlyList<IBrowserFile>" FilesChanged="UploadFiles" Context="imageUpload">
-                    <ButtonTemplate>
-                        <MudButton HtmlTag="label"
-                                   Variant="Variant.Filled"
-                                   Color="Color.Primary"
-                                   StartIcon="@Icons.Material.Filled.CloudUpload"
-                                   for="@imageUpload">
-                            Upload Images
-                        </MudButton>
-                    </ButtonTemplate>
-                </MudFileUpload>
-
-                <MudSpacer />
-
-                <MudImage Src="@_product.ImageUrl" />
-
+            </MudItem>
+            <MudItem xs="12" lg="6" md="6">
+                <MudGrid>
+                    <MudItem xs="12" lg="12">
+                        <MudFileUpload T="IReadOnlyList<IBrowserFile>" FilesChanged="UploadFiles" Context="imageUpload">
+                            <ButtonTemplate>
+                                <MudButton HtmlTag="label"
+                                       Variant="Variant.Filled"
+                                       Color="Color.Primary"
+                                       StartIcon="@Icons.Material.Filled.CloudUpload"
+                                           for="@imageUpload">
+                                    Upload Images
+                                </MudButton>
+                            </ButtonTemplate>
+                        </MudFileUpload>
+                    </MudItem>
+                    <MudItem xs="12" lg="12">
+                        <MudImage Src="@_product.ImageUrl" Height="350"/>
+                    </MudItem>
+                </MudGrid>
+            </MudItem>
+            <MudItem xs="12" lg="12" md="12">
                 <MudButton Color="Color.Primary" Variant="Variant.Filled" ButtonType="ButtonType.Submit">@_title</MudButton>
                 <MudButton Href="/Product" Color="Color.Secondary" Variant="Variant.Filled">Back to Products</MudButton>
-            </EditForm>
-        }
-    </MudItem>
-</MudGrid>
+            </MudItem>
+        </MudGrid>
+    </EditForm>
+}
 
 @code {
     [Parameter]
     public int Id { get; set; }
 
-    private ProductDto _product { get; set; } = new();
+    private ProductDto _product { get; set; } = new()
+    {
+        ImageUrl = "\\images\\product\\default.jpg"
+    };
     private IEnumerable<CategoryDto> _categories { get; set; } = new List<CategoryDto>();
     private string _title { get; set; } = "Create";
     private bool _isLoading;
-    IList<IBrowserFile> files = new List<IBrowserFile>();
-
 
     private async Task UploadFiles(IReadOnlyList<IBrowserFile> files)
     {
