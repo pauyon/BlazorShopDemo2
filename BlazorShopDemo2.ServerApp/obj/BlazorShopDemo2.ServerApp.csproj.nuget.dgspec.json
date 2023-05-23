@@ -290,6 +290,10 @@
               "target": "Package",
               "version": "[7.0.5, )"
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
             "MudBlazor": {
               "target": "Package",
               "version": "[6.2.5, )"

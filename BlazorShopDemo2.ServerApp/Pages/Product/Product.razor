@@ -3,6 +3,8 @@
 @inject IProductRepository ProductRepository
 @inject NavigationManager NavigationManager
 @inject IDialogService DialogService
+@inject IFileUploadService FileUploadService
+@inject ISnackbar SnackbarService
 
 <MudGrid>
     <MudItem xs="12" lg="12" md="12">
@@ -94,7 +96,14 @@
 
         if (!result.Canceled)
         {
+            if (!string.IsNullOrEmpty(product.ImageUrl))
+            {
+                FileUploadService.DeleteFile(product.ImageUrl);
+            }
+
             await ProductRepository.Delete(product.Id);
+            SnackbarService.Add("Product successfully deleted", Severity.Success);
+
             await LoadProducts();
         }
     }

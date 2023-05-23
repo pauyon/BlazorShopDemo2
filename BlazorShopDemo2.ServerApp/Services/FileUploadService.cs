@@ -15,9 +15,13 @@ namespace BlazorShopDemo2.ServerApp.Services
 
         public bool DeleteFile(string filePath)
         {
-            if (File.Exists(filePath))
+            var currentPath = Directory.GetCurrentDirectory();
+
+            var fullPath = Path.Combine(currentPath, $"wwwroot{filePath}");
+
+            if (File.Exists(fullPath))
             {
-                File.Delete(filePath);
+                File.Delete(fullPath);
                 return true;
             }
 

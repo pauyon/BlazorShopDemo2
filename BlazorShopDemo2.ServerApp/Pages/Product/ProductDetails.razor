@@ -56,7 +56,14 @@
                                 </MudFileUpload>
                             </MudItem>
                             <MudItem xs="12" lg="12">
-                                <MudImage Src="@_product.ImageUrl" Height="350"/>
+                                @if (string.IsNullOrEmpty(_product.ImageUrl))
+                                {
+                                    <MudImage Src="images\\product\\default.jpg" Height="350" />
+                                }
+                                else
+                                {
+                                    <MudImage Src="@_product.ImageUrl" Height="350"/>
+                                }
                             </MudItem>
                         </MudGrid>
                     </MudItem>
@@ -76,13 +83,11 @@
     [Parameter]
     public int Id { get; set; }
 
-    private ProductDto _product { get; set; } = new()
-    {
-        ImageUrl = "\\images\\product\\default.jpg"
-    };
+    private ProductDto _product { get; set; } = new();
     private IEnumerable<CategoryDto> _categories { get; set; } = new List<CategoryDto>();
     private string _title { get; set; } = "Create";
     private bool _isLoading;
+    private string _oldImageUrl { get; set; }
 
     private async Task UploadFiles(IReadOnlyList<IBrowserFile> files)
     {
@@ -124,6 +129,7 @@
         {
             _title = "Update";
             _product = await ProductRepository.Get(Id);
+            _oldImageUrl = _product.ImageUrl;
         }
 
         _isLoading = false;
@@ -135,10 +141,16 @@
         if (_product.Id == 0)
         {
             ProductRepository.Create(_product);
+            SnackbarService.Add("Product was created", Severity.Success);
         }
         else
         {
+            if (_oldImageUrl != _product.ImageUrl)
+            {
+                _fileUploadService.DeleteFile(_oldImageUrl);
+            }
             ProductRepository.Update(_product);
+            SnackbarService.Add("Product was updated", Severity.Success);
         }
 
         NavigationManager.NavigateTo("product");
