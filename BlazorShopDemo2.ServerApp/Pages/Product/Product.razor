@@ -57,6 +57,27 @@
     private IEnumerable<ProductDto> _products { get; set; } = new List<ProductDto>();
     private bool _isLoading;
 
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthenticationState { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationState;
+
+        if (!authState.User.Identity.IsAuthenticated)
+        {
+            var uri = new Uri(NavigationManager.Uri);
+            NavigationManager.NavigateTo($"/identity/account/login?returnUrl={uri.LocalPath}", true);
+        }
+        else
+        {
+            if (!authState.User.IsInRole(Common.Constants.RoleAdmin))
+            {
+                NavigationManager.NavigateTo("/errorpage");
+            }
+        }
+    }
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)

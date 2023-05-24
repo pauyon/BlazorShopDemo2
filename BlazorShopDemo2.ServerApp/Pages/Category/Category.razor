@@ -4,6 +4,7 @@
 @inject NavigationManager NavigationManager
 @inject IDialogService DialogService
 
+@attribute [Authorize(Roles = Common.Constants.RoleAdmin)]
 
 <MudGrid>
     <MudItem xs="12" lg="12" md="12">

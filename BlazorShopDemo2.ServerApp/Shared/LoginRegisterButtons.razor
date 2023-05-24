@@ -2,6 +2,7 @@
 <AuthorizeView>
     <Authorized>
         <span class="flex-grid">
+            Hello, @context.User.Identity.Name
             <MudButton Href="identity/account/logout" Color="Color.Info" Variant="Variant.Filled">Logout</MudButton>
         </span>
     </Authorized>

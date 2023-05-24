@@ -10,6 +10,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "BlazorShopDemo2.Business": "1.0.0",
+          "BlazorShopDemo2.Common": "1.0.0",
           "BlazorShopDemo2.DataAccess": "1.0.0",
           "BlazorShopDemo2.Domain": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.5",
@@ -2518,6 +2519,11 @@
           "BlazorShopDemo2.Business.dll": {}
         }
       },
+      "BlazorShopDemo2.Common/1.0.0": {
+        "runtime": {
+          "BlazorShopDemo2.Common.dll": {}
+        }
+      },
       "BlazorShopDemo2.DataAccess/1.0.0": {
         "dependencies": {
           "BlazorShopDemo2.Domain": "1.0.0",
@@ -3954,6 +3960,11 @@
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
     "BlazorShopDemo2.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlazorShopDemo2.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
