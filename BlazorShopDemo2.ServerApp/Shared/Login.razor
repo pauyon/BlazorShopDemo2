@@ -1,0 +1,18 @@
+﻿
+<AuthorizeView>
+    <Authorized>
+        <span class="flex-grid">
+            <MudButton Href="identity/account/logout" Color="Color.Info" Variant="Variant.Filled">Logout</MudButton>
+        </span>
+    </Authorized>
+    <NotAuthorized>
+        <span class="flex-grid">
+            <MudButton Href="identity/account/register" Color="Color.Info" Variant="Variant.Filled">Register</MudButton>
+            <MudButton Href="identity/account/login" Color="Color.Secondary" Variant="Variant.Filled">Login</MudButton>
+        </span>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+
+}
