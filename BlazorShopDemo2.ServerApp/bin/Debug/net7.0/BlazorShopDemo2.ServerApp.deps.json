@@ -12,8 +12,11 @@
           "BlazorShopDemo2.Business": "1.0.0",
           "BlazorShopDemo2.DataAccess": "1.0.0",
           "BlazorShopDemo2.Domain": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.5",
+          "Microsoft.AspNetCore.Identity.UI": "7.0.5",
           "Microsoft.EntityFrameworkCore.Design": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
+          "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.6",
           "MudBlazor": "6.2.5",
           "MudBlazor.Markdown": "0.1.0",
@@ -174,6 +177,18 @@
         },
         "runtime": {
           "lib/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {
+            "assemblyVersion": "7.0.5.0",
+            "fileVersion": "7.0.523.17410"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Identity.UI/7.0.5": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Embedded": "7.0.5",
+          "Microsoft.Extensions.Identity.Stores": "7.0.5"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Identity.UI.dll": {
             "assemblyVersion": "7.0.5.0",
             "fileVersion": "7.0.523.17410"
           }
@@ -1091,6 +1106,11 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore.Tools/7.0.5": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "7.0.5"
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "7.0.0"
@@ -1125,6 +1145,22 @@
           "lib/net7.0/Microsoft.Extensions.DependencyModel.dll": {
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/7.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "7.0.0"
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Embedded/7.0.5": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.FileProviders.Embedded.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.523.17410"
           }
         }
       },
@@ -2608,6 +2644,13 @@
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/7.0.5",
       "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.7.0.5.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Identity.UI/7.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OMq8uXQeoL82hlAT96OW4/dh9OalCWOF5G02vlBrZG2+9PREhkOFz9h8zTeqciXUUTSpr06BR18yjCPqOUJnmQ==",
+      "path": "microsoft.aspnetcore.identity.ui/7.0.5",
+      "hashPath": "microsoft.aspnetcore.identity.ui.7.0.5.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Metadata/7.0.1": {
       "type": "package",
       "serviceable": true,
@@ -2832,6 +2875,13 @@
       "path": "microsoft.entityframeworkcore.sqlserver/7.0.5",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.7.0.5.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Tools/7.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OV/PUGBVSbQVd2daTeXoMBoao2qtfBgT2TuaYo48xRYUS2gH++f8OFiZc6zwASqkMKgs1/t5uVlxgKl18m/1Fw==",
+      "path": "microsoft.entityframeworkcore.tools/7.0.5",
+      "hashPath": "microsoft.entityframeworkcore.tools.7.0.5.nupkg.sha512"
+    },
     "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2873,6 +2923,20 @@
       "sha512": "sha512-oONNYd71J3LzkWc4fUHl3SvMfiQMYUCo/mDHDEu76hYYxdhdrPYv6fvGv9nnKVyhE9P0h20AU8RZB5OOWQcAXg==",
       "path": "microsoft.extensions.dependencymodel/7.0.0",
       "hashPath": "microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NyawiW9ZT/liQb34k9YqBSNPLuuPkrjMgQZ24Y/xXX1RoiBkLUdPMaQTmxhZ5TYu8ZKZ9qayzil75JX95vGQUg==",
+      "path": "microsoft.extensions.fileproviders.abstractions/7.0.0",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Embedded/7.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E6enL5sLbxKjAWyUxthcOxlDYR6OT+wUBj42EpTR3j/cKI+UOkGCW7cSm8F9yQi9KxeM4Iq8dKZd13gMwYE+6Q==",
+      "path": "microsoft.extensions.fileproviders.embedded/7.0.5",
+      "hashPath": "microsoft.extensions.fileproviders.embedded.7.0.5.nupkg.sha512"
     },
     "Microsoft.Extensions.Identity.Core/7.0.5": {
       "type": "package",

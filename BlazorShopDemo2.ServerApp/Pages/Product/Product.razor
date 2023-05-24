@@ -11,14 +11,14 @@
         <MudText Typo="Typo.h3">Products</MudText>
     </MudItem>
     <MudItem xs="12" lg="12" md="12">
-        @if (_products.Any())
-        {
-            <MudCard Elevation="5">
-                <MudCardContent>
-                    <MudGrid>
-                        <MudItem xs="12" lg="12" md="12">
-                            <MudButton Href="product/create" Variant="Variant.Filled" Color="Color.Primary">Add New product</MudButton>
-                        </MudItem>
+        <MudCard Elevation="5">
+            <MudCardContent>
+                <MudGrid>
+                    <MudItem xs="12" lg="12" md="12">
+                        <MudButton Href="product/create" Variant="Variant.Filled" Color="Color.Primary">Add New product</MudButton>
+                    </MudItem>
+                    @if (_products.Any())
+                    {
                         <MudItem xs="12" lg="12" md="12">
                             <MudDataGrid Items="@_products" Hover="true" Breakpoint="Breakpoint.Sm" Loading="_isLoading" LoadingProgressColor="Color.Info" Striped>
                                 <Columns>
@@ -37,19 +37,19 @@
                                 </Columns>
                             </MudDataGrid>
                         </MudItem>
-                    </MudGrid>
-                </MudCardContent>
-            </MudCard>
-        }
-        else
-        {
-            if (_isLoading)
-            {
-                <div class="text-center">
-                    <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
-                </div>
-            }
-        }
+                    }
+                    else
+                    {
+                        if (_isLoading)
+                        {
+                            <div class="text-center">
+                                <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+                            </div>
+                        }
+                    }
+                </MudGrid>
+            </MudCardContent>
+        </MudCard>
     </MudItem>
 </MudGrid>
 

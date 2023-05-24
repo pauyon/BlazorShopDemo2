@@ -57,20 +57,24 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\d115998f-345c-47bd-8a27-3c959aa69a41.jpg",
-      "PackagePath": "staticwebassets\\images\\product\\d115998f-345c-47bd-8a27-3c959aa69a41.jpg"
+      "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\65ea0b0d-2d92-4d07-aaf3-b4859d96105d.png",
+      "PackagePath": "staticwebassets\\images\\product\\65ea0b0d-2d92-4d07-aaf3-b4859d96105d.png"
     },
     {
-      "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\d2ab7412-62ca-4045-8a6f-e610ad273303.jpg",
-      "PackagePath": "staticwebassets\\images\\product\\d2ab7412-62ca-4045-8a6f-e610ad273303.jpg"
+      "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\7d1b17db-fbb0-4b1b-8c04-d1ed89e2800e.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\7d1b17db-fbb0-4b1b-8c04-d1ed89e2800e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\8e546db5-cdc2-4697-8676-decee9fca875.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\8e546db5-cdc2-4697-8676-decee9fca875.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\a678d491-3fe5-414d-a14a-06918c626908.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\a678d491-3fe5-414d-a14a-06918c626908.jpg"
     },
     {
       "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\default.jpg",
       "PackagePath": "staticwebassets\\images\\product\\default.jpg"
-    },
-    {
-      "Id": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\e0223830-ddd4-4ff6-9250-0e3ad2b80e11.jpg",
-      "PackagePath": "staticwebassets\\images\\product\\e0223830-ddd4-4ff6-9250-0e3ad2b80e11.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BlazorShopDemo2.ServerApp.Microsoft.AspNetCore.StaticWebAssets.props",

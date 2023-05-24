@@ -298,3 +298,6 @@ C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ServerApp\obj\Debug\
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ServerApp\obj\Debug\net7.0\BlazorShopDemo2.ServerApp.pdb
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ServerApp\obj\Debug\net7.0\BlazorShopDemo2.ServerApp.genruntimeconfig.cache
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ServerApp\obj\Debug\net7.0\ref\BlazorShopDemo2.ServerApp.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ServerApp\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ServerApp\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShopDemo2.ServerApp\obj\Debug\net7.0\BlazorShopDemo2.ServerApp.MvcApplicationPartsAssemblyInfo.cs
