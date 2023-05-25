@@ -1,25 +1,31 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace BlazorShopDemo2.Domain.Models.Authentication
 {
     public class SignUpRequestDto
     {
-        [Required(ErrorMessage = "Name is required")]
+        [Display(Name = "Name")]
+        [Required(ErrorMessage = "{0} is required")]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Email is required")]
+        [Display(Name = "Email")]
+        [Required(ErrorMessage = "{0} is required")]
         [RegularExpression("^[a-zA-z0-9_.-]+@[]a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$", ErrorMessage = "Invalid Email Address")]
         public string Email { get; set; }
 
+        [Display(Name = "Phone number")]
         public string PhoneNumber { get; set; }
 
-        [Required(ErrorMessage = "Password is required")]
+        [Display(Name = "Password")]
+        [Required(ErrorMessage = "{0} is required")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Required(ErrorMessage = "Confirm password is required")]
+        [Display(Name = "Confirm password")]
+        [Required(ErrorMessage = "Please confirm password")]
         [DataType(DataType.Password)]
-        [Compare("Password", ErrorMessage = "Password and confirm password do not match")]
+        [Compare("Password", ErrorMessage = "Passwords do not match")]
         public string ConfirmPassword { get; set; }
     }
 }

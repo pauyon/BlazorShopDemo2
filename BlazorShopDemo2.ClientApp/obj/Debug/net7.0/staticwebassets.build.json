@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gz0CVcSLqkDOrpSv2nUJ2WfKPaGWvPVn1DXKIavFN4w=",
+  "Hash": "RWA7mya3REWmEDl64ZelWXSlV1yTtmL2qyIrS3rHQbY=",
   "Source": "BlazorShopDemo2.ClientApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -4692,6 +4692,23 @@
       "OriginalItemSpec": "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.5\\build\\net7.0\\blazor.webassembly.js"
     },
     {
+      "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll",
+      "SourceId": "BlazorShopDemo2.ClientApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\pauli\\.nuget\\packages\\blazored.localstorage\\4.3.0\\lib\\net7.0\\Blazored.LocalStorage.dll"
+    },
+    {
       "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BlazorShopDemo2.ClientApp.dll",
       "SourceId": "BlazorShopDemo2.ClientApp",
       "SourceType": "Computed",
@@ -4724,6 +4741,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net7.0\\BlazorShopDemo2.ClientApp.pdb"
+    },
+    {
+      "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BlazorShopDemo2.Common.dll",
+      "SourceId": "BlazorShopDemo2.ClientApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/BlazorShopDemo2.Common.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Common\\bin\\Debug\\net7.0\\BlazorShopDemo2.Common.dll"
+    },
+    {
+      "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BlazorShopDemo2.Common.pdb",
+      "SourceId": "BlazorShopDemo2.ClientApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/BlazorShopDemo2.Common.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.Common\\bin\\Debug\\net7.0\\BlazorShopDemo2.Common.pdb"
     },
     {
       "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BlazorShopDemo2.Domain.dll",
@@ -4911,6 +4962,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
+      "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "SourceId": "BlazorShopDemo2.ClientApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -8789,6 +8857,23 @@
       "OriginalItemSpec": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.IO.Compression.ZipFile.dll"
     },
     {
+      "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\obj\\Debug\\net7.0\\build-gz\\4Rf7JwNM.gz",
+      "SourceId": "BlazorShopDemo2.ClientApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll"
+    },
+    {
       "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\obj\\Debug\\net7.0\\build-gz\\4sujcxt6.gz",
       "SourceId": "BlazorShopDemo2.ClientApp",
       "SourceType": "Computed",
@@ -9076,6 +9161,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Security.Cryptography.Algorithms.dll"
+    },
+    {
+      "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\obj\\Debug\\net7.0\\build-gz\\AsAm4WOJ.gz",
+      "SourceId": "BlazorShopDemo2.ClientApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/BlazorShopDemo2.Common.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BlazorShopDemo2.Common.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BlazorShopDemo2.Common.dll"
     },
     {
       "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\obj\\Debug\\net7.0\\build-gz\\atM++Z+T.gz",
@@ -9399,6 +9501,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Net.WebHeaderCollection.dll"
+    },
+    {
+      "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\obj\\Debug\\net7.0\\build-gz\\DBwB1aWJ.gz",
+      "SourceId": "BlazorShopDemo2.ClientApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/BlazorShopDemo2.Common.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BlazorShopDemo2.Common.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BlazorShopDemo2.Common.pdb"
     },
     {
       "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\obj\\Debug\\net7.0\\build-gz\\dDKUdKDM.gz",
@@ -10300,6 +10419,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Reflection.Emit.dll"
+    },
+    {
+      "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\obj\\Debug\\net7.0\\build-gz\\Kune06TA.gz",
+      "SourceId": "BlazorShopDemo2.ClientApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\obj\\Debug\\net7.0\\build-gz\\KXO8RzKM.gz",

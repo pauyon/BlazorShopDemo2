@@ -9,9 +9,11 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.LocalStorage.dll": "sha256-eXVgTw72kEn74FZgDQbLtvAmXbiZDSj5gzUnxVmwowQ=",
       "Markdig.dll": "sha256-Yw+GRvxgz3z1q0RtGw3n9XUh1wzzAOQJ7uMJJAJs770=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-\/EkWRHMHBhfvvlx5hLVtXGPm8+Gyp4WkPiKKiiJIrqQ=",
       "Microsoft.AspNetCore.Components.dll": "sha256-SvjxqyTqc68zPsYivPRkvjKRhUg5zYufzqwGNS83bwg=",
+      "Microsoft.AspNetCore.Components.Authorization.dll": "sha256-41dLN3Fx\/ysI0SP+sKtAMWTZamweRiufJ7JPqZlnXrA=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-eoQ2CgfBGkvbK4QUMBgFDPIBqJem+g8247Fb3ZmnmCI=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-p3BQFPwUbOgu5j9V+1HlUGwDcVzB7iYNO4dIsDCOAgA=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-55+LOYcA1yHHPQEjl6eI0UGgteq41y+8js6DQ5PhXDk=",
@@ -215,15 +217,17 @@
       "mscorlib.dll": "sha256-qqpKd+W+AFb6UxudEYEKzrz7ma81p5LrWUwPBVvHV4U=",
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
-      "BlazorShopDemo2.Domain.dll": "sha256-PXxjouYUUxSIcwz2GQ1PxSolXiY8wcM\/SewagMYBp1M=",
-      "BlazorShopDemo2.ClientApp.dll": "sha256-7h4kxMxU20ckFYa93nP4f2f9BQ+ZZR1Q5OjVdmOgEjs="
+      "BlazorShopDemo2.Common.dll": "sha256-twAOZg8xYGmSk7lP+wdJgy0EcGj5iVkDv6q51lrhpTw=",
+      "BlazorShopDemo2.Domain.dll": "sha256-fKTm1y+6DG2u2a9k8HNm\/XpbaBd7\/jvgLvLn+gb+LMA=",
+      "BlazorShopDemo2.ClientApp.dll": "sha256-HH2YxLV4OrpCrsQUvKYImRlAKD7Ymr9kjk3m+4r1dF0="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "BlazorShopDemo2.Domain.pdb": "sha256-S5rhxY8RO5cLDQ1LTE00kbzr+hSyfK4eR8rTW2PFu3E=",
-      "BlazorShopDemo2.ClientApp.pdb": "sha256-Xl\/tcMGDMAZrNGKrOGj7ZAxkzp8Sn0qpHs\/brEGbRgQ="
+      "BlazorShopDemo2.Common.pdb": "sha256-MOmOywlqsUcuJ59i\/zmFCOofld6t1ais+SFJQqI7t\/s=",
+      "BlazorShopDemo2.Domain.pdb": "sha256-Ey2WVKUrCmj2GCLbmT9krBl0v5gUaA077c0MJPJeYwA=",
+      "BlazorShopDemo2.ClientApp.pdb": "sha256-\/zPiunpRSO2OqDDYZUQi+\/z1xzf2pjnNHxjELV2P+nM="
     },
     "runtime": {
       "dotnet.7.0.5.kqa2b4uuz5.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",

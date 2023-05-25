@@ -20,12 +20,28 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/pauli/source/repos/BlazorShopDemo2/BlazorShopDemo2.ClientApp/Pages/Authentication/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25cTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pauli/source/repos/BlazorShopDemo2/BlazorShopDemo2.ClientApp/Pages/Authentication/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25cTG9nb3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pauli/source/repos/BlazorShopDemo2/BlazorShopDemo2.ClientApp/Pages/Authentication/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25cUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/pauli/source/repos/BlazorShopDemo2/BlazorShopDemo2.ClientApp/Pages/Details.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV0YWlscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/pauli/source/repos/BlazorShopDemo2/BlazorShopDemo2.ClientApp/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pauli/source/repos/BlazorShopDemo2/BlazorShopDemo2.ClientApp/Shared/LoginRegisterButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luUmVnaXN0ZXJCdXR0b25zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/pauli/source/repos/BlazorShopDemo2/BlazorShopDemo2.ClientApp/Shared/SurveyPrompt.razor]

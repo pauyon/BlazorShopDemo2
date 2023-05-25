@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "1SuchSevFaLgfuT9jAsLpE26OLL3ucPTbNYk7gkjs5iDNAYN1u42eFOxoAon73DZqJsPgSL3Gh7hMTggb7zvtQ==",
+  "dgSpecHash": "mo9mssZ3WUpg6LEFIrD6RQzzlcpftGV4sbww7iDe8Crz5IwGRRgg4wVTC8OQ98qTIT8cWp3kwwkoslAPfi8mEw==",
   "success": true,
   "projectFilePath": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ClientApp\\BlazorShopDemo2.ClientApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\pauli\\.nuget\\packages\\blazored.localstorage\\4.3.0\\blazored.localstorage.4.3.0.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\markdig\\0.30.4\\markdig.0.30.4.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\microsoft.aspnetcore.components.7.0.5.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.5\\microsoft.aspnetcore.components.analyzers.7.0.5.nupkg.sha512",
+    "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\7.0.5\\microsoft.aspnetcore.components.authorization.7.0.5.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\7.0.5\\microsoft.aspnetcore.components.forms.7.0.5.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.components.web\\7.0.5\\microsoft.aspnetcore.components.web.7.0.5.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.5\\microsoft.aspnetcore.components.webassembly.7.0.5.nupkg.sha512",

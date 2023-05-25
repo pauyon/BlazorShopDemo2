@@ -1,0 +1,45 @@
+﻿@page "/register"
+
+<MudContainer MaxWidth="MaxWidth.Small">
+    <MudCard Elevation="5">
+        <MudCardHeader Class="text-center">
+            <MudText Typo="Typo.h3">Register</MudText>
+        </MudCardHeader>
+        <MudForm @ref="_form" Model="@_register">
+            <MudCardContent>
+                @if (_showErrors)
+                {
+                    <MudAlert Severity="Severity.Error">
+                        @String.Join(Environment.NewLine, Errors)
+                    </MudAlert>
+                }
+                <MudTextField @bind-Value="_register.Name"
+                              For="@(() => _register.Name)"
+                              Label="@(nameof(_register.Name))"
+                              Immediate="true" />
+                <MudTextField @bind-Value="_register.Email"
+                              For="@(() => _register.Email)"
+                              Label="@(nameof(_register.Email))"
+                              Immediate="true" />
+                <MudTextField @bind-Value="_register.PhoneNumber"
+                              For="@(() => _register.PhoneNumber)"
+                              Label="@(nameof(_register.PhoneNumber))"
+                              InputType="InputType.Telephone"
+                              Immediate="true" />
+                <MudTextField @bind-Value="_register.Password"
+                              For="@(() => _register.Password)"
+                              Label="@(nameof(_register.Password))"
+                              InputType="InputType.Password"
+                              Immediate="true"/>
+                <MudTextField @bind-Value="_register.ConfirmPassword"
+                              For="@(() => _register.ConfirmPassword)"
+                              Label="@(nameof(_register.ConfirmPassword))"
+                              InputType="InputType.Password"
+                              Immediate="true" />
+            </MudCardContent>
+            <MudCardActions>
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto" OnClick="@(async () => await Submit())">Login</MudButton>
+            </MudCardActions>
+        </MudForm>
+    </MudCard>
+</MudContainer>

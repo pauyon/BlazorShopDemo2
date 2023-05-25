@@ -1,0 +1,19 @@
+﻿
+<AuthorizeView>
+    <Authorized>
+        <span class="flex-grid">
+            Hello, @context.User.Identity.Name
+            <MudButton Href="/logout" Color="Color.Info" Variant="Variant.Filled">Logout</MudButton>
+        </span>
+    </Authorized>
+    <NotAuthorized>
+        <span class="flex-grid">
+            <MudButton Href="/register" Color="Color.Info" Variant="Variant.Filled">Register</MudButton>
+            <MudButton Href="/login" Color="Color.Secondary" Variant="Variant.Filled">Login</MudButton>
+        </span>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+
+}

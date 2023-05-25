@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BlazorShopDemo2.Common
+﻿namespace BlazorShopDemo2.Common
 {
     public static class Constants
     {
@@ -16,5 +10,8 @@ namespace BlazorShopDemo2.Common
 
         public const string RoleAdmin = "Admin";
         public const string RoleCustomer = "Customer";
+
+        public const string LocalToken = "JWT Token";
+        public const string LocalUserDetails = "UserDetails";
     }
 }

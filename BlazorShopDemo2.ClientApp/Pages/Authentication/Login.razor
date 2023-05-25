@@ -1,0 +1,34 @@
+﻿@page "/login"
+
+<MudContainer MaxWidth="MaxWidth.Small">
+    <MudCard Elevation="5">
+        <MudCardHeader Class="text-center">
+                <MudText Typo="Typo.h3">Login</MudText>
+            </MudCardHeader>
+            <MudForm @ref="_form" Model="@_login">
+                <MudCardContent>
+                    @if (_showErrors)
+                    {
+                        <MudAlert Severity="Severity.Error">
+                            @String.Join(Environment.NewLine, Errors)
+                        </MudAlert>
+                    }
+                    <MudTextField @bind-Value="_login.UserName"
+                                    For="@(() => _login.UserName)"
+                              Label="@(nameof(_login.UserName))"
+                                    Immediate="true" />
+                    <MudTextField @bind-Value="_login.Password"
+                                    For="@(() => _login.Password)"
+                                    Label="@(nameof(_login.Password))"
+                                    InputType="InputType.Password"
+                                    Immediate="true" />
+                </MudCardContent>
+                <MudCardActions>
+                    <span class="ml-auto">
+                    <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="Submit">Login</MudButton>
+                        <MudButton Href="/register" Variant="Variant.Filled" Color="Color.Secondary">Register</MudButton>
+                    </span>
+                </MudCardActions>
+            </MudForm>
+    </MudCard>
+</MudContainer>
