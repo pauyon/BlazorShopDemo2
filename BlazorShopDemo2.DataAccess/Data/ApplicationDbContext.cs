@@ -1,4 +1,5 @@
 ﻿using BlazorShopDemo2.Domain.Entities;
+using BlazorShopDemo2.Domain.Entities.Authentication;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 

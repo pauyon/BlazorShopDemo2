@@ -283,3 +283,6 @@ C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShop2.Api\obj\Debug\net7.0\ref
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShop2.Api\obj\Debug\net7.0\BlazorShopDemo2.Api.pdb
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShop2.Api\obj\Debug\net7.0\BlazorShopDemo2.Api.genruntimeconfig.cache
 C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShop2.Api\obj\Debug\net7.0\ref\BlazorShopDemo2.Api.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShop2.Api\bin\Debug\net7.0\BlazorShopDemo2.Common.dll
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShop2.Api\bin\Debug\net7.0\BlazorShopDemo2.Common.pdb
+C:\Users\pauli\source\repos\BlazorShopDemo2\BlazorShop2.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

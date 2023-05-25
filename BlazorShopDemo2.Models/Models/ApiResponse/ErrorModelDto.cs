@@ -1,4 +1,4 @@
-﻿namespace BlazorShopDemo2.Domain.Models
+﻿namespace BlazorShopDemo2.Domain.Models.ApiResponse
 {
     public class ErrorModelDto
     {

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.5" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.6" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
@@ -15,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlazorShopDemo2.Business\BlazorShopDemo2.Business.csproj" />
+    <ProjectReference Include="..\BlazorShopDemo2.Common\BlazorShopDemo2.Common.csproj" />
     <ProjectReference Include="..\BlazorShopDemo2.DataAccess\BlazorShopDemo2.DataAccess.csproj" />
   </ItemGroup>
 
