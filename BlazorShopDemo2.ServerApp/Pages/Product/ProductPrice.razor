@@ -1,0 +1,60 @@
+﻿@page "/product/price/{Id:int}"
+
+<MudText Typo="Typo.h3">Product Prices</MudText>
+
+@if (@_isLoading)
+{
+    <MudProgressCircular/>
+}
+else
+{
+    <MudCard Elevation="5">
+        <MudCardHeader>
+            <MudGrid>
+                <MudItem xs="12" lg="2" md="2">
+                    <MudImage Src="@_product.ImageUrl" Height="250"/>
+                </MudItem>
+                <MudItem xs="12" lg="10" md="10">
+                    <MudGrid>
+                        <MudItem xs="12" lg="12" md="12">
+                            <MudText Typo="Typo.h4">@_product.Name</MudText>
+                        </MudItem>
+                        <MudItem xs="12" lg="12" md="12">
+                            <MudText Typo="Typo.h6">@_product.Category.Name</MudText>
+                        </MudItem>
+                        <MudItem xs="12" lg="12" md="12">
+                            <MudText Typo="Typo.h6">@_product.Description</MudText>
+                        </MudItem>
+                    </MudGrid>
+                </MudItem>
+            </MudGrid>
+        </MudCardHeader>
+        <MudCardContent>
+            <MudButton OnClick="@AddItem" Color="@Color.Success" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Add">Add Price</MudButton>
+            <MudDataGrid T="ProductPriceDto" 
+                Items="@_productPrices" 
+                EditMode="@DataGridEditMode.Form"
+                StartedEditingItem="@StartedEditingItem" 
+                CanceledEditingItem="@CanceledEditingItem" 
+                CommittedItemChanges="@CommittedItemChanges"
+                EditTrigger="@DataGridEditTrigger.Manual"
+                Elevation="5"
+                ReadOnly="false" 
+                Bordered="true"
+                Dense="true"
+                Striped="true">
+                <Columns>
+                    <PropertyColumn Property="x => x.Id" Title="Id" IsEditable="false" />
+                    <PropertyColumn Property="x => x.Size" Title="Size"/>
+                    <PropertyColumn Property="x => x.Price" Title="Price"/>
+                    <TemplateColumn CellClass="d-flex justify-end">
+                    <CellTemplate>
+                        <MudIconButton Icon="@Icons.Material.Outlined.Edit" OnClick="@context.Actions.StartEditingItemAsync" />
+                            <MudIconButton Icon="@Icons.Material.Outlined.Delete" OnClick="@(() => OpenDeleteDialog(context.Item))" />
+                    </CellTemplate>
+                    </TemplateColumn>
+                    </Columns>
+                    </MudDataGrid>
+        </MudCardContent>
+    </MudCard>
+}

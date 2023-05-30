@@ -15,5 +15,7 @@ namespace BlazorShopDemo2.Domain.Entities
 
         [ForeignKey("CategoryId")]
         public Category Category { get; set; }
+
+        public ICollection<ProductPrice> ProductPrices { get; set; }
     }
 }

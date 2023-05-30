@@ -30,6 +30,7 @@
                                         <CellTemplate>
                                             <MudStack Row>
                                                 <MudButton OnClick="@(() => NavigateToEdit(context.Item))" StartIcon="@Icons.Material.Filled.Edit" Variant="Variant.Filled" Color="Color.Primary">Edit</MudButton>
+                                                <MudButton OnClick="@(() => NavigateToPrice(context.Item))" StartIcon="@Icons.Material.Filled.Edit" Variant="Variant.Filled" Color="Color.Secondary">Price</MudButton>
                                                 <MudButton OnClick="@(() => OpenDeleteDialog(context.Item))" StartIcon="@Icons.Material.Filled.Delete" Variant="Variant.Filled" Color="Color.Error">Delete</MudButton>
                                             </MudStack>
                                         </CellTemplate>
@@ -98,6 +99,11 @@
     private void NavigateToEdit(ProductDto product)
     {
         NavigationManager.NavigateTo($"product/edit/{product.Id}");
+    }
+
+    private void NavigateToPrice(ProductDto product)
+    {
+        NavigationManager.NavigateTo($"product/price/{product.Id}");
     }
 
     private async Task OpenDeleteDialog(ProductDto product)
