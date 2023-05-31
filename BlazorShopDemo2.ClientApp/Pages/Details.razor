@@ -12,7 +12,23 @@
             </MudCardHeader>
             <MudCardMedia Image="@_product.ImageUrl" Height="250" />
             <MudCardContent>
-                <MudText Typo="Typo.body2">@_product.Description</MudText>
+                <MudGrid>
+                    <MudItem xs="12" md="12" xl="12">
+                        <MudText Typo="Typo.body2">@_product.Description</MudText>
+                    </MudItem>
+                    <MudItem xs="12" md="12" xl="12">
+                        <MudSelect T="decimal" Label="Size" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
+                            <MudSelectItem T="decimal" Value="0.0m">Select Size</MudSelectItem>
+                            @foreach (var productPrice in _product.ProductPrices)
+                            {
+                                <MudSelectItem T="decimal" Value="@productPrice.Price">@($"{productPrice.Size} - {productPrice.Price}")</MudSelectItem>   
+                            }
+                        </MudSelect>
+                    </MudItem>
+                    <MudItem xs="12" md="12" xl="12">
+                        <MudNumericField T="int" Label="Quantity" Variant="Variant.Outlined"/>
+                    </MudItem>
+                </MudGrid>
             </MudCardContent>
             <MudCardActions>
                 <MudButton Variant="Variant.Filled" Color="Color.Dark" Href="@($"/")" FullWidth>Return to home</MudButton>
