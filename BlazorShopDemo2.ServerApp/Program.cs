@@ -7,9 +7,18 @@ using BlazorShopDemo2.ServerApp.Services.IService;
 using Microsoft.EntityFrameworkCore;
 using MudBlazor.Services;
 using Microsoft.AspNetCore.Identity;
+using MudBlazor;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddMudServices();
+builder.Services.AddMudServices(config =>
+{
+    config.SnackbarConfiguration.PositionClass = Defaults.Classes.Position.BottomCenter;
+
+    config.SnackbarConfiguration.PreventDuplicates = false;
+    config.SnackbarConfiguration.NewestOnTop = false;
+    config.SnackbarConfiguration.ShowCloseIcon = true;
+    config.SnackbarConfiguration.SnackbarVariant = Variant.Filled;
+});
 
 // Add services to the container.
 builder.Services.AddRazorPages();

@@ -28,7 +28,10 @@ namespace BlazorShopDemo2.ServerApp.Pages.Product
         [Inject]
         public ISnackbar SnackbarService { get; set; }
 
+        private MudDataGrid<ProductPriceDto> _dataGrid = new();
+
         private bool _isLoading = true;
+        private bool _canCancelEdit = true;
 
         private ProductDto _product { get; set; } = new();
 
@@ -61,23 +64,27 @@ namespace BlazorShopDemo2.ServerApp.Pages.Product
             _events.Insert(0, $"Event = StartedEditingItem, Data = {System.Text.Json.JsonSerializer.Serialize(item)}");
         }
 
-        private void CanceledEditingItem(ProductPriceDto item)
+        private async Task CanceledEditingItem(ProductPriceDto item)
         {
-            _events.Insert(0, $"Event = CanceledEditingItem, Data = {System.Text.Json.JsonSerializer.Serialize(item)}");
+            if (item.Id == 0)
+            {
+                _productPrices.Remove(item);
+                await LoadProductPrices();
+            }
         }
 
-        private async void CommittedItemChanges(ProductPriceDto item)
+        private async Task CommittedItemChanges(ProductPriceDto item)
         {
             _events.Insert(0, $"Event = CommittedItemChanges, Data = {System.Text.Json.JsonSerializer.Serialize(item)}");
 
             if (item.Id == 0)
             {
-                ProductPriceRepository.Create(item);
+                await ProductPriceRepository.Create(item);
                 SnackbarService.Add("Product price was added", Severity.Success);
             }
             else
             {
-                ProductPriceRepository.Update(item);
+                await ProductPriceRepository.Update(item);
                 SnackbarService.Add("Product price was updated", Severity.Success);
             }
 
@@ -86,12 +93,19 @@ namespace BlazorShopDemo2.ServerApp.Pages.Product
 
         private void AddItem()
         {
-            _productPrices.Add(new ProductPriceDto
+            _canCancelEdit = false;
+
+            var newItem = new ProductPriceDto
             {
                 Price = 0.0,
                 Size = string.Empty,
                 ProductId = _product.Id,
-            });
+            };
+
+            _productPrices.Add(newItem);
+            _dataGrid.SetEditingItemAsync(newItem);
+
+            _canCancelEdit = true;
         }
 
         private async Task OpenDeleteDialog(ProductPriceDto productPrice)
