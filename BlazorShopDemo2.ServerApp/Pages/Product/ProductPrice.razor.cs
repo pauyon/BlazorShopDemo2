@@ -1,13 +1,9 @@
-﻿using BlazorShopDemo2.Business.Repository;
-using BlazorShopDemo2.Business.Repository.IRepository;
+﻿using BlazorShopDemo2.Business.Repository.IRepository;
 using BlazorShopDemo2.Domain.Models;
-using BlazorShopDemo2.ServerApp.Services;
-using BlazorShopDemo2.ServerApp.Services.IService;
 using BlazorShopDemo2.ServerApp.Shared;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
 using System.Collections.ObjectModel;
-using static MudBlazor.CategoryTypes;
 
 namespace BlazorShopDemo2.ServerApp.Pages.Product
 {
@@ -31,13 +27,12 @@ namespace BlazorShopDemo2.ServerApp.Pages.Product
         private MudDataGrid<ProductPriceDto> _dataGrid = new();
 
         private bool _isLoading = true;
-        private bool _canCancelEdit = true;
 
         private ProductDto _product { get; set; } = new();
 
-        private ObservableCollection<ProductPriceDto> _productPrices { get; set; } = new();
+        private ProductPriceDto _backupProductPrice { get; set; } = new();
 
-        private List<string> _events = new();
+        private ObservableCollection<ProductPriceDto> _productPrices { get; set; } = new();
 
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
@@ -61,7 +56,11 @@ namespace BlazorShopDemo2.ServerApp.Pages.Product
 
         private void StartedEditingItem(ProductPriceDto item)
         {
-            _events.Insert(0, $"Event = StartedEditingItem, Data = {System.Text.Json.JsonSerializer.Serialize(item)}");
+            _backupProductPrice = new ProductPriceDto
+            {
+                Size = item.Size,
+                Price = item.Price,
+            };
         }
 
         private async Task CanceledEditingItem(ProductPriceDto item)
@@ -71,12 +70,16 @@ namespace BlazorShopDemo2.ServerApp.Pages.Product
                 _productPrices.Remove(item);
                 await LoadProductPrices();
             }
+            else
+            {
+                item.Size = _backupProductPrice.Size;
+                item.Price = _backupProductPrice.Price;
+                _backupProductPrice = new();
+            }
         }
 
         private async Task CommittedItemChanges(ProductPriceDto item)
         {
-            _events.Insert(0, $"Event = CommittedItemChanges, Data = {System.Text.Json.JsonSerializer.Serialize(item)}");
-
             if (item.Id == 0)
             {
                 await ProductPriceRepository.Create(item);
@@ -93,8 +96,6 @@ namespace BlazorShopDemo2.ServerApp.Pages.Product
 
         private void AddItem()
         {
-            _canCancelEdit = false;
-
             var newItem = new ProductPriceDto
             {
                 Price = 0.0,
@@ -104,8 +105,6 @@ namespace BlazorShopDemo2.ServerApp.Pages.Product
 
             _productPrices.Add(newItem);
             _dataGrid.SetEditingItemAsync(newItem);
-
-            _canCancelEdit = true;
         }
 
         private async Task OpenDeleteDialog(ProductPriceDto productPrice)

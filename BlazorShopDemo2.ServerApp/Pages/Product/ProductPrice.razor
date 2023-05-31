@@ -37,7 +37,6 @@ else
                 <MudItem xs="12" lg="12" md="12">
                     <MudDataGrid @ref="@_dataGrid"
                                 T="ProductPriceDto"
-                                CanCancelEdit="@_canCancelEdit"
                                 Items="@_productPrices"
                                 EditMode="@DataGridEditMode.Form"
                                 StartedEditingItem="@StartedEditingItem"
@@ -50,8 +49,15 @@ else
                                 Dense="true"
                                 Striped="true">
                         <Columns>
-                            <PropertyColumn Property="x => x.Id" Title="Id" IsEditable="false" />
-                            <PropertyColumn Property="x => x.Size" Title="Size" />
+                            <PropertyColumn Property="x => x.Size" Title="Size">
+                                <EditTemplate>
+                                    <MudSelect @bind-Value="context.Item.Size" Label="@(nameof(context.Item.Size))" Required RequiredError="You must select a size" Margin="@Margin.Dense" Variant="Variant.Outlined">
+                                    <MudSelectItem Value="@("Small")">Small</MudSelectItem>
+                                    <MudSelectItem Value="@("Medium")">Medium</MudSelectItem>
+                                    <MudSelectItem Value="@("Large")">Large</MudSelectItem>
+                                    </MudSelect>
+                                </EditTemplate>
+                            </PropertyColumn>
                             <PropertyColumn Property="x => x.Price" Title="Price" />
                             <TemplateColumn CellClass="d-flex justify-end">
                                 <CellTemplate>
