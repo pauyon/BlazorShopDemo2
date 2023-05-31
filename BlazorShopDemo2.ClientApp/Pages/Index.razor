@@ -1,6 +1,7 @@
 ﻿@page "/"
 
 @inject IProductService ProductService
+@inject IProductService ProductService
 
 <AuthorizeView>
     <Authorized>
@@ -18,20 +19,33 @@
     }
     else
     {
-        @foreach (var product in _products)
+        @foreach(var category in _products.Select(x => x.Category.Name).OrderBy(x => x).Distinct())
         {
-            <MudItem xs="12" lg="2" md="4">
-                <MudCard Elevation="5" Class="text-center">
-                    <MudCardMedia Image="@product.ImageUrl" Height="250" />
-                    <MudCardContent>
-                        <MudText Typo="Typo.h6">@product.Name</MudText>
-                        <MudText Typo="Typo.body2">@product.Description</MudText>
-                    </MudCardContent>
-                    <MudCardActions>
-                        <MudButton Variant="Variant.Filled" Color="Color.Primary" Href="@($"/details/{@product.Id}")">View</MudButton>
-                    </MudCardActions>
-                </MudCard>
-            </MudItem>
+            <MudGrid Class="mb-4">
+                <MudItem xs="12" lg="12" md="12">
+                    <MudText Typo="Typo.h3">@category.Humanize().Pluralize()</MudText>
+                </MudItem>
+                @foreach (var product in _products.Where(x => x.Category.Name == category))
+                {
+                    <MudItem xs="12" lg="2" md="4">
+                        <MudCard Elevation="5" Class="text-center">
+                            <MudCardHeader>
+                                <MudText Typo="Typo.h6">@product.Name</MudText>
+                                <MudSpacer/>
+                                <MudText Typo="Typo.h5" Color="Color.Success">@product.ProductPrices.FirstOrDefault()?.Price.ToString("C0")</MudText>
+                            </MudCardHeader>
+                            <MudCardMedia Image="@product.ImageUrl" Height="250" />
+                            <MudCardContent>
+                                <MudText Typo="Typo.body2">@product.Description</MudText>
+                            </MudCardContent>
+                            <MudCardActions>
+                                <MudButton Variant="Variant.Filled" Color="Color.Primary" Href="@($"/details/{@product.Id}")">View</MudButton>
+                            </MudCardActions>
+                        </MudCard>
+                    </MudItem>
+                }
+            </MudGrid>
+
         }
     }
 </MudGrid>

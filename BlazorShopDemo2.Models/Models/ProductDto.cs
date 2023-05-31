@@ -20,5 +20,7 @@ namespace BlazorShopDemo2.Domain.Models
         public int CategoryId { get; set; }
 
         public CategoryDto Category { get; set; }
+
+        public IEnumerable<ProductPriceDto> ProductPrices { get; set; } = new List<ProductPriceDto>();
     }
 }

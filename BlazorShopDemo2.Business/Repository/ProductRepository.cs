@@ -50,7 +50,7 @@ namespace BlazorShopDemo2.Business.Repository
 
         public async Task<ProductDto> Get(int id)
         {
-            var obj = _context.Products.Include(x => x.Category).FirstOrDefault(x => x.Id == id);
+            var obj = _context.Products.Include(x => x.Category).Include(x => x.ProductPrices).FirstOrDefault(x => x.Id == id);
 
             if (obj != null)
             {
@@ -62,7 +62,8 @@ namespace BlazorShopDemo2.Business.Repository
 
         public async Task<IEnumerable<ProductDto>> GetAll()
         {
-            return _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDto>>(_context.Products.Include(x => x.Category));
+            return _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDto>>(
+                _context.Products.Include(x => x.Category).Include(x => x.ProductPrices));
         }
 
         public async Task<ProductDto> Update(ProductDto objDto)

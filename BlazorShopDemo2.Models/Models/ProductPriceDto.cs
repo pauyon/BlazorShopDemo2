@@ -14,6 +14,6 @@ namespace BlazorShopDemo2.Domain.Models
 
         [Required]
         [Range(1, int.MaxValue, ErrorMessage = "Price must be greater than 1")]
-        public double Price { get; set; }
+        public decimal Price { get; set; }
     }
 }

@@ -98,7 +98,7 @@ namespace BlazorShopDemo2.ServerApp.Pages.Product
         {
             var newItem = new ProductPriceDto
             {
-                Price = 0.0,
+                Price = 0.0m,
                 Size = string.Empty,
                 ProductId = _product.Id,
             };
