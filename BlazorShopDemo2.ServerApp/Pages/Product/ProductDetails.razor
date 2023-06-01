@@ -22,14 +22,14 @@
         }
         else
         {
-            <EditForm Model="@_product" OnValidSubmit="HandleSubmit">
+            <MudForm @ref="_mudForm" Model="@_product" >
                 <MudGrid>
                     <MudItem xs="12" lg="6" md="6">
-                        <DataAnnotationsValidator />
-                        <MudTextField @bind-Text="_product.Name" For="@(() => _product.Name)" Label="@(nameof(_product.Name))" Variant="Variant.Outlined" />
+                        <MudTextField @bind-Text="_product.Name" For="@(() => _product.Name)" Label="@(nameof(_product.Name))" Variant="Variant.Outlined" Required />
                         <MudTextField @bind-Text="_product.Color" For="@(() => _product.Color)" Label="@(nameof(_product.Color))" Variant="Variant.Outlined" />
-                        <MudTextField @bind-Text="_product.Description" For="@(() => _product.Description)" Label="@(nameof(_product.Description))" Variant="Variant.Outlined" Lines="5" />
+                        <MudTextField @bind-Text="_product.Description" For="@(() => _product.Description)" Label="@(nameof(_product.Description))" Variant="Variant.Outlined" Lines="5" Required />
                         <MudAutocomplete T="CategoryDto"
+                                     For="@(() => _product.Category)"
                                      Label="@(nameof(_product.Category))"
                                      Value="@_product.Category"
                                      SearchFunc="@SearchCategory"
@@ -69,11 +69,11 @@
                         </MudGrid>
                     </MudItem>
                     <MudItem xs="12" lg="12" md="12">
-                        <MudButton Color="Color.Primary" Variant="Variant.Filled" ButtonType="ButtonType.Submit">@_title</MudButton>
+                        <MudButton Color="Color.Primary" Variant="Variant.Filled" OnClick="HandleSubmit">@_title</MudButton>
                         <MudButton Href="/Product" Color="Color.Secondary" Variant="Variant.Filled">Back to Products</MudButton>
                     </MudItem>
                 </MudGrid>
-            </EditForm>
+            </MudForm>
         }
     </MudItem>
 </MudGrid>
@@ -89,6 +89,8 @@
     private string _title { get; set; } = "Create";
     private bool _isLoading;
     private string _oldImageUrl { get; set; }
+
+    private MudForm? _mudForm = new();
 
     private async Task UploadFiles(IReadOnlyList<IBrowserFile> files)
     {
@@ -137,11 +139,15 @@
         StateHasChanged();
     }
 
-    private void HandleSubmit()
+    private async Task HandleSubmit()
     {
+        await _mudForm!.Validate();
+
+        if (!_mudForm.IsValid) return;
+
         if (_product.Id == 0)
         {
-            ProductRepository.Create(_product);
+            await ProductRepository.Create(_product);
             SnackbarService.Add("Product was created", Severity.Success);
         }
         else
@@ -150,7 +156,7 @@
             {
                 _fileUploadService.DeleteFile(_oldImageUrl);
             }
-            ProductRepository.Update(_product);
+            await ProductRepository.Update(_product);
             SnackbarService.Add("Product was updated", Severity.Success);
         }
 

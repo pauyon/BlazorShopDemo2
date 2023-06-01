@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "g+qS7DbgdNzTisqAyfwQgH7QDb8awEGeQGN3/gN2gIo=",
+  "Hash": "a58sZ+t3K1N8+eHgjkpgK6umS4AC7nCLuCMVV0Yg1l4=",
   "Source": "BlazorShopDemo2.ServerApp",
   "BasePath": "_content/BlazorShopDemo2.ServerApp",
   "Mode": "Default",
@@ -5965,6 +5965,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\7d1b17db-fbb0-4b1b-8c04-d1ed89e2800e.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\7f745281-ab9a-46c7-a663-d1cfd025fba4.jpg",
+      "SourceId": "BlazorShopDemo2.ServerApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\",
+      "BasePath": "_content/BlazorShopDemo2.ServerApp",
+      "RelativePath": "images/product/7f745281-ab9a-46c7-a663-d1cfd025fba4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\7f745281-ab9a-46c7-a663-d1cfd025fba4.jpg"
     },
     {
       "Identity": "C:\\Users\\pauli\\source\\repos\\BlazorShopDemo2\\BlazorShopDemo2.ServerApp\\wwwroot\\images\\product\\8e546db5-cdc2-4697-8676-decee9fca875.jpg",

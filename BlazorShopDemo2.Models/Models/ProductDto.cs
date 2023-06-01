@@ -17,6 +17,7 @@ namespace BlazorShopDemo2.Domain.Models
         public string Color { get; set; }
         public string ImageUrl { get; set; }
 
+        [Required]
         public int CategoryId { get; set; }
 
         public CategoryDto Category { get; set; }

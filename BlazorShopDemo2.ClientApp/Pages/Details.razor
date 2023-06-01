@@ -1,4 +1,6 @@
 ﻿@page "/details/{ProductId:int}"
+@using BlazorShopDemo2.ClientApp.ViewModels;
+@using System.Diagnostics.CodeAnalysis;
 @inject IProductService ProductService
 
 <MudGrid>
@@ -12,27 +14,45 @@
             </MudCardHeader>
             <MudCardMedia Image="@_product.ImageUrl" Height="250" />
             <MudCardContent>
-                <MudGrid>
-                    <MudItem xs="12" md="12" xl="12">
-                        <MudText Typo="Typo.body2">@_product.Description</MudText>
-                    </MudItem>
-                    <MudItem xs="12" md="12" xl="12">
-                        <MudSelect T="decimal" Label="Size" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
-                            <MudSelectItem T="decimal" Value="0.0m">Select Size</MudSelectItem>
-                            @foreach (var productPrice in _product.ProductPrices)
-                            {
-                                <MudSelectItem T="decimal" Value="@productPrice.Price">@($"{productPrice.Size} - {productPrice.Price}")</MudSelectItem>   
-                            }
-                        </MudSelect>
-                    </MudItem>
-                    <MudItem xs="12" md="12" xl="12">
-                        <MudNumericField T="int" Label="Quantity" Variant="Variant.Outlined"/>
-                    </MudItem>
-                </MudGrid>
+                <MudItem xs="12" md="12" xl="12">
+                    <MudText Typo="Typo.body2">@_product.Description</MudText>
+                </MudItem>
+                <MudItem xs="12" md="12" xl="12">
+                    @if (_product.ProductPrices.Any())
+                    {
+                        <MudForm @ref="_mudForm" Model="_detailsViewModel">
+                            <MudGrid>
+                                <MudItem xs="12" md="12" xl="12">
+                                    <MudSelect For="@(() => _detailsViewModel.ProductPriceId)" @bind-Value="@_detailsViewModel.ProductPriceId" Label="Size" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
+                                        <MudSelectItem Value="0">Select Size</MudSelectItem>
+                                        @foreach (var productPrice in _product.ProductPrices)
+                                        {
+                                            <MudSelectItem Value="@productPrice.Id">@($"{productPrice.Size} - {productPrice.Price.ToString("C0")}")</MudSelectItem>
+                                        }
+                                    </MudSelect>
+                                </MudItem>
+                                <MudItem xs="12" md="12" xl="12">
+                                    <MudNumericField For="@(() => _detailsViewModel.Quantity)" @bind-Value="@_detailsViewModel.Quantity" Label="Quantity" Variant="Variant.Outlined"/>
+                                </MudItem>
+                            </MudGrid>
+                        </MudForm>
+                    }
+                    else
+                    {
+                        <MudText Typo="Typo.body1" Color="Color.Warning">There are no sizes available yet.</MudText>
+                    }
+                </MudItem>
             </MudCardContent>
             <MudCardActions>
                 <MudButton Variant="Variant.Filled" Color="Color.Dark" Href="@($"/")" FullWidth>Return to home</MudButton>
-                <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth>Add to Cart</MudButton>
+                @if (_detailsViewModel.ProductPriceId > 0)
+                {
+                    <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="AddToCart" FullWidth>Add to Cart</MudButton>
+                }
+                else
+                {
+                    <MudButton Variant="Variant.Filled" Color="Color.Primary" Disabled FullWidth>Add to Cart</MudButton>
+                }
             </MudCardActions>
         </MudCard>
     </MudItem>
@@ -42,13 +62,26 @@
     [Parameter]
     public int ProductId { get; set; }
 
+    private DetailsViewModel _detailsViewModel = new();
     private ProductDto _product { get; set; } = new();
     private bool _isLoading { get; set; } = true;
+
+    private MudForm? _mudForm = new();
 
     protected override async Task OnInitializedAsync()
     {
         _isLoading = true;
         _product = await ProductService.Get(ProductId);
         _isLoading = false;
+    }
+
+    private async Task AddToCart()
+    {
+        await _mudForm!.Validate();
+
+        if (_mudForm.IsValid)
+        {
+            
+        }
     }
 }
