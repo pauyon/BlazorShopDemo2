@@ -2,7 +2,8 @@
 {
     public static class Constants
     {
-        public const string ShoppingCart = "Pending";
+        public const string ShoppingCart = "ShoppingCart";
+        public const string StatusPending = "Pending";
         public const string StatusConfirmed = "Confirmed";
         public const string StatusShipped = "Shipped";
         public const string StatusRefunded = "Refunded";

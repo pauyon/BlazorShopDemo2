@@ -1,7 +1,8 @@
 ﻿@page "/details/{ProductId:int}"
 @using BlazorShopDemo2.ClientApp.ViewModels;
 @using System.Diagnostics.CodeAnalysis;
-@inject IProductService ProductService
+
+@inherits PageBase
 
 <MudGrid>
     <MudItem xs="12" lg="12" md="12">
@@ -20,7 +21,7 @@
                 <MudItem xs="12" md="12" xl="12">
                     @if (_product.ProductPrices.Any())
                     {
-                        <MudForm @ref="_mudForm" Model="_detailsViewModel">
+                        <MudForm @ref="MudForm" Model="_detailsViewModel">
                             <MudGrid>
                                 <MudItem xs="12" md="12" xl="12">
                                     <MudSelect For="@(() => _detailsViewModel.ProductPriceId)" @bind-Value="@_detailsViewModel.ProductPriceId" Label="Size" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
@@ -57,31 +58,3 @@
         </MudCard>
     </MudItem>
 </MudGrid>
-
-@code {
-    [Parameter]
-    public int ProductId { get; set; }
-
-    private DetailsViewModel _detailsViewModel = new();
-    private ProductDto _product { get; set; } = new();
-    private bool _isLoading { get; set; } = true;
-
-    private MudForm? _mudForm = new();
-
-    protected override async Task OnInitializedAsync()
-    {
-        _isLoading = true;
-        _product = await ProductService.Get(ProductId);
-        _isLoading = false;
-    }
-
-    private async Task AddToCart()
-    {
-        await _mudForm!.Validate();
-
-        if (_mudForm.IsValid)
-        {
-            
-        }
-    }
-}

@@ -1,0 +1,38 @@
+﻿@page "/shoppingcart"
+
+@inherits PageBase
+
+<MudGrid>
+    <MudItem xs="12" md="12" lg="12">
+        <MudText Typo="Typo.h3">Shopping Cart</MudText>
+    </MudItem>
+    <MudItem xs="12" md="12" lg="12">
+        <MudCard Elevation="5">
+            <MudCardHeader>
+                <MudText Typo="Typo.h5">Items in cart</MudText>
+            </MudCardHeader>
+            <MudCardContent>
+                @foreach (var item in _shoppingCart)
+                {
+                    <MudGrid>
+                        <MudItem sm="12" md="2" lg="2">
+                            <MudImage Src="@item.Product.ImageUrl" Height="150" />
+                        </MudItem>
+                        <MudItem sm="12" md="2" lg="2">
+                            <MudText Typo="Typo.body1">
+                                @item.Product.Description
+                            </MudText>
+                        </MudItem>
+                        <MudItem sm="12" md="2" lg="2">
+                            <span class="d-inline-flex flex-row gap-4">
+                                <MudNumericField @bind-Value="item.Quantity" Variant="Variant.Outlined"></MudNumericField>
+                                <MudButton StartIcon="@Icons.Material.Filled.Delete" Color="Color.Error" Variant="Variant.Filled">Delete</MudButton>
+                            </span>
+                        </MudItem>
+                        <MudItem sm="12" md="4" lg="4"></MudItem>
+                    </MudGrid>
+                }
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+</MudGrid>

@@ -1,7 +1,6 @@
 ﻿@page "/"
 
-@inject IProductService ProductService
-@inject IProductService ProductService
+@inherits PageBase
 
 <AuthorizeView>
     <Authorized>
@@ -13,7 +12,7 @@
 </AuthorizeView>
 
 <MudGrid>
-    @if (_isLoading)
+    @if (IsLoading)
     {
         <MudProgressCircular Color="Color.Primary"/>
     }
@@ -45,19 +44,6 @@
                     </MudItem>
                 }
             </MudGrid>
-
         }
     }
 </MudGrid>
-
-@code {
-    private bool _isLoading = true;
-    public IEnumerable<ProductDto> _products;
-
-    protected override async Task OnInitializedAsync()
-    {
-        _isLoading = true;
-        _products = await ProductService.GetAll();
-        _isLoading = false;
-    }
-}
