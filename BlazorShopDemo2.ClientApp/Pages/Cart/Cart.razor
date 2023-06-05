@@ -26,7 +26,8 @@
                         <MudItem sm="12" md="2" lg="2">
                             <span class="d-inline-flex flex-row gap-4">
                                 <MudNumericField @bind-Value="item.Quantity" Variant="Variant.Outlined"></MudNumericField>
-                                <MudButton StartIcon="@Icons.Material.Filled.Delete" Color="Color.Error" Variant="Variant.Filled">Delete</MudButton>
+                                <MudButton StartIcon="@Icons.Material.Filled.Update" OnClick="@(() => UpdateCartItem(item))" Color="Color.Info" Variant="Variant.Filled">Update</MudButton>
+                                <MudButton StartIcon="@Icons.Material.Filled.Delete" OnClick="@(() => RemoveCartItem(item))" Color="Color.Error" Variant="Variant.Filled">Delete</MudButton>
                             </span>
                         </MudItem>
                         <MudItem sm="12" md="4" lg="4"></MudItem>

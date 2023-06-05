@@ -4,8 +4,9 @@ namespace BlazorShopDemo2.ClientApp.Services.IService
 {
     public interface IShoppingCartService
     {
-        Task RemoveFromCart(ShoppingCart shoppingCart);
+        Task RemoveFromCart(ShoppingCart item);
+        Task UpdateCart(ShoppingCart item);
 
-        Task AddToCart(ShoppingCart shoppingCart);
+        Task AddToCart(ShoppingCart item);
     }
 }

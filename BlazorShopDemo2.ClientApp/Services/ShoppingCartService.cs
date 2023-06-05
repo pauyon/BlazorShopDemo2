@@ -34,6 +34,22 @@ namespace BlazorShopDemo2.ClientApp.Services
             await _localStorageService.SetItemAsync(Common.Constants.ShoppingCart, cart);
         }
 
+        public async Task UpdateCart(ShoppingCart item)
+        {
+            var cart = await _localStorageService.GetItemAsync<List<ShoppingCart>>(Common.Constants.ShoppingCart);
+
+            if (cart == null) cart = new List<ShoppingCart>();
+
+            var cartItem = cart.FirstOrDefault(x => x.ProductId == item.ProductId && x.ProductPriceId == item.ProductPriceId);
+
+            if (cartItem != null)
+            {
+                cart[cart.IndexOf(cartItem)].Quantity = item.Quantity;
+            }
+
+            await _localStorageService.SetItemAsync(Common.Constants.ShoppingCart, cart);
+        }
+
         public async Task RemoveFromCart(ShoppingCart item)
         {
             var cart = await _localStorageService.GetItemAsync<List<ShoppingCart>>(Common.Constants.ShoppingCart);
@@ -42,14 +58,7 @@ namespace BlazorShopDemo2.ClientApp.Services
 
             if (cartItem != null)
             {
-                if (cartItem.Quantity == 0 || cartItem.Quantity == 1)
-                {
-                    cart.Remove(cartItem);
-                }
-                else
-                {
-                    cart[cart.IndexOf(cartItem)].Quantity -= cartItem.Quantity;
-                }
+                cart.Remove(cartItem);
             }
 
             await _localStorageService.SetItemAsync(Common.Constants.ShoppingCart, cart);
